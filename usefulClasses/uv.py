@@ -1,30 +1,31 @@
+#
+from usefulEnums import UVRiskEnum
+
 # Definition of the UV class...
 class UV:
 
 	# Definition of the UV class constructor...
 	def __init__(self, value):
 
-		determiedUVRisk = ""
-
 		if value <= 2:
 
-			determiedUVRisk = "Low"
+			determiedUVRisk = UVRiskEnum.Low
 
 		elif 3 <= value and value <= 5:
 
-			determiedUVRisk = "Moderate"
+			determiedUVRisk = UVRiskEnum.Moderate
 
 		elif 6 <= value and value <= 7:
 		
-			determiedUVRisk = "High"
+			determiedUVRisk = UVRiskEnum.High
 
 		elif 8 <= value && value <= 10:
 
-			determiedUVRisk = "Very High"
+			determiedUVRisk = UVRiskEnum.Very_High
 
 		else:
 
-			determiedUVRisk = "Extreme"
+			determiedUVRisk = UVRiskEnum.Extreme
 
 		self.__index = value
 		self.__risk = determiedUVRisk
@@ -37,4 +38,4 @@ class UV:
 	#
 	def getRisk(self):
 
-		return self.__risk		
+		return self.__risk
