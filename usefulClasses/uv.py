@@ -1,5 +1,5 @@
 #
-from usefulEnums import uvRiskEnum
+from usefulEnums import UVRiskEnum
 
 # Definition of the UV class...
 class UV:
@@ -9,23 +9,23 @@ class UV:
 
 		if value <= 2:
 
-			determiedUVRisk = uvRiskEnum.UVRiskEnum.Low
+			determiedUVRisk = UVRiskEnum.UVRiskEnum.Low
 
 		elif 3 <= value and value <= 5:
 
-			determiedUVRisk = uvRiskEnum.UVRiskEnum.Moderate
+			determiedUVRisk = UVRiskEnum.UVRiskEnum.Moderate
 
 		elif 6 <= value and value <= 7:
 		
-			determiedUVRisk = uvRiskEnum.UVRiskEnum.High
+			determiedUVRisk = UVRiskEnum.UVRiskEnum.High
 
 		elif 8 <= value && value <= 10:
 
-			determiedUVRisk = uvRiskEnum.UVRiskEnum.Very_High
+			determiedUVRisk = UVRiskEnum.UVRiskEnum.Very_High
 
 		else:
 
-			determiedUVRisk = uvRiskEnum.UVRiskEnum.Extreme
+			determiedUVRisk = UVRiskEnum.UVRiskEnum.Extreme
 
 		self.__index = value
 		self.__risk = determiedUVRisk
