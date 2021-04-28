@@ -1,10 +1,15 @@
 # Definition of the OpenWeatherPy class...
 class OpenWeatherPy:
 
-	# Definition of the OpenWeatherPy class constructor...
-	def __init__(self):
+	# Definition of the first OpenWeatherPy class constructor...
+	def __init__(self, city, countryCode, APIKey):
 
-		print("Init function...")
+		print("Init function (1)...")
+
+	# Definition of the second OpenWeatherPy class constructor...
+	def __init__(self, city, APIKey):
+
+		print("Init function (2)...")	
 
 	#
 	def getCoords(self):
