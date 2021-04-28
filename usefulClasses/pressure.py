@@ -8,7 +8,7 @@ class Pressure:
 	def __init__(self, value):
 
 		self.__value = value
-		self.__measureUnit = PressureEnum.PressureEnum.HECTOPASCAL
+		self.__measureUnit = PressureEnum.Pressure.HECTOPASCAL
 		self.__measureUnitSymbol = "hPa"
 
 	#
