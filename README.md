@@ -1,2 +1,2 @@
 # openPyther
-Python module to get, treat and return weather from OpenWeatherMap.
+Python package to get, treat and return weather from OpenWeatherMap.
