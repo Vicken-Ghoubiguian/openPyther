@@ -2,7 +2,7 @@
 import openPyther.openPyther as openPyther
 
 #
-#a = 
+#a = openPyther.OpenPyther("","","")
 
 #
 b = openPyther.OpenPyther("","")
