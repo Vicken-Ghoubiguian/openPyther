@@ -1,4 +1,4 @@
-#
+# Import all modules useful for the main class (OpenPyther class)...
 from . import Coordinates
 from . import GeographicLocation
 from . import Humidity
