@@ -1,5 +1,15 @@
-#
-from usefulEnums import PressureEnum
+# Importation of the Enum class to define the enum below...
+from enum import Enum
+
+# Definition of the Pressure enum...
+class PressureEnum(Enum):
+
+	HECTOPASCAL = 1
+	PASCAL = 2
+	BAR = 3
+	ATMOSPHERE = 4
+	TORR = 5
+	POUNDSPERSQUAREINCH = 6
 
 # Definition of the Pressure class...
 class Pressure:
@@ -8,7 +18,7 @@ class Pressure:
 	def __init__(self, value):
 
 		self.__value = value
-		self.__measureUnit = PressureEnum.Pressure.HECTOPASCAL
+		self.__measureUnit = PressureEnum.HECTOPASCAL
 		self.__measureUnitSymbol = "hPa"
 
 	#
