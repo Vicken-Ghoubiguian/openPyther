@@ -1,3 +1,6 @@
+#
+from . import Coordinates
+
 # Definition of the OpenPyther class...
 class OpenPyther:
 
