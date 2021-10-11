@@ -14,12 +14,7 @@ class OpenPyther:
 	# Definition of the first OpenPyther class constructor...
 	def __init__(self, city, countryCode, APIKey):
 
-		print("Init function (1)...")
-
-	# Definition of the second OpenPyther class constructor...
-	def __init__(self, city, APIKey):
-
-		print("Init function (2)...")	
+		print("Init function...")
 
 	#
 	def getCoords(self):
