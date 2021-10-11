@@ -2,4 +2,7 @@
 import openPyther.openPyther as openPyther
 
 #
-print("Hello...\n");
+#a = 
+
+#
+b = openPyther.OpenPyther("","")
