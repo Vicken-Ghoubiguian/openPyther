@@ -1,5 +1,12 @@
 #
 from . import Coordinates
+from . import GeographicLocation
+from . import Humidity
+from . import Pressure
+from . import Temperature
+from . import UV
+from . import Weather
+from . import Wind
 
 # Definition of the OpenPyther class...
 class OpenPyther:
