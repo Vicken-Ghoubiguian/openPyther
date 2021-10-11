@@ -1,12 +1,5 @@
-# Importation of the Enum class to define the enum below...
-from enum import Enum
-
-# Definition of the TemperatureEnum enum...
-class TemperatureEnum(Enum):
-
-	KELVIN = 1
-	CELSIUS = 2
-	FAHRENHEIT = 3
+#
+from . import temperatureEnum
 
 # Definition of the Temperature class...
 class Temperature:
@@ -15,7 +8,7 @@ class Temperature:
 	def __init__(self, value):
 
 		self.__value = value
-		self.__measureUnit = TemperatureEnum.Temperature.KELVIN
+		self.__measureUnit = temperatureEnum.TemperatureEnum.KELVIN
 		self.__measureUnitSymbol = "K"
 
 	#
