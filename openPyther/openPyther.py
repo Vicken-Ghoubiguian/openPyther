@@ -21,9 +21,9 @@ class OpenPyther:
 	def __init__(self, city, countryCode, APIKey):
 
 		#
-		r = requests.post("https://api.openweathermap.org/data/2.5/weather?q=" + city + "," + countryCode + "&appid=" + APIKey + "", None)
+		weatherResponse = requests.post("https://api.openweathermap.org/data/2.5/weather?q=" + city + "," + countryCode + "&appid=" + APIKey + "", None)
 
-		print(r.text)
+		print(weatherResponse.text)
 
 	#
 	def getCoords(self):
