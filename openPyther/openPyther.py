@@ -8,13 +8,19 @@ from . import UV
 from . import Weather
 from . import Wind
 
+#
+import requests
+
 # Definition of the OpenPyther class...
 class OpenPyther:
 
 	# Definition of the first OpenPyther class constructor...
 	def __init__(self, city, countryCode, APIKey):
 
-		print("Init function...")
+		#
+		r = requests.post("https://api.openweathermap.org/data/2.5/weather?q=" + city + "," + countryCode + "&appid=" + APIKey + "", None)
+
+		print(r.text)
 
 	#
 	def getCoords(self):
