@@ -11,6 +11,9 @@ from . import Wind
 #
 import requests
 
+#
+import json
+
 # Definition of the OpenPyther class...
 class OpenPyther:
 
