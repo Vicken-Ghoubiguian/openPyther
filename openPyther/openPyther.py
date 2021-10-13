@@ -33,6 +33,8 @@ class OpenPyther:
 		# Definition of the 'Cod' attribute (which correspond to the previous HTTP/HTTPS response's cod)...
 		self.__cod = weatherResponse_datas["cod"]
 
+		self.__error = ""
+
 		#print(weatherResponse_datas["coord"])
 
 		#
@@ -111,4 +113,4 @@ class OpenPyther:
 	#
 	def getError(self):
 
-		print("getError function...")
+		return self.__error
