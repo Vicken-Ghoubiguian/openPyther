@@ -7,6 +7,7 @@ from . import Temperature
 from . import UV
 from . import Weather
 from . import Wind
+from . import Error
 
 #
 import requests
