@@ -33,7 +33,7 @@ class OpenPyther:
 		# Definition of the 'Cod' attribute (which correspond to the previous HTTP/HTTPS response's cod)...
 		self.__cod = weatherResponse_datas["cod"]
 
-		print(weatherResponse_datas["coord"])
+		#print(weatherResponse_datas["coord"])
 
 		#
 		#self.__coords = Coordinates(weatherResponse_datas["cod"])
@@ -107,3 +107,8 @@ class OpenPyther:
 	def getUltraViolet(self):
 
 		print("getUltraViolet function...")
+
+	#
+	def getError(self):
+
+		print("getError function...")
