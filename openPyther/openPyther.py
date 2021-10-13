@@ -30,8 +30,7 @@ class OpenPyther:
 		#
 		print(weatherResponse_datas)
 
-		#
-		print(weatherResponse_datas["cod"])
+		self.__cod = weatherResponse_datas["cod"]
 
 	#
 	def getCoords(self):
