@@ -22,6 +22,9 @@ class OpenPyther:
 
 		#
 		weatherResponse = requests.post("https://api.openweathermap.org/data/2.5/weather?q=" + city + "," + countryCode + "&appid=" + APIKey + "", None)
+		
+		#
+		print(type(weatherResponse))
 
 		print(weatherResponse.text)
 
