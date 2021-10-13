@@ -24,7 +24,14 @@ class OpenPyther:
 		#
 		weatherResponse = requests.post("https://api.openweathermap.org/data/2.5/weather?q=" + city + "," + countryCode + "&appid=" + APIKey + "", None)
 
-		print(weatherResponse.text)
+		#
+		weatherResponse_datas = json.loads(weatherResponse.text)
+
+		#
+		print(weatherResponse_datas)
+
+		#
+		print(weatherResponse_datas["cod"])
 
 	#
 	def getCoords(self):
