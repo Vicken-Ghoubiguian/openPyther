@@ -9,10 +9,10 @@ from . import Weather
 from . import Wind
 from . import Error
 
-#
+# Import the installed-from-PyPi module named "requests" to elaborate and execute HTTP requests...
 import requests
 
-#
+# Import the module named "json" to jsonify, dejsonify and treat JSON datas and strings...
 import json
 
 # Definition of the OpenPyther class...
