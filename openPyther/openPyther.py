@@ -9,7 +9,7 @@ from . import Weather
 from . import Wind
 from . import Error
 
-# Import the installed-from-PyPi module named "requests" to elaborate and execute HTTP requests...
+# Import the installed-from-PyPi module named "requests" to elaborate and execute HTTP/HTTPS requests...
 import requests
 
 # Import the module named "json" to jsonify, dejsonify and treat JSON datas and strings...
@@ -30,6 +30,7 @@ class OpenPyther:
 		#
 		print(weatherResponse_datas)
 
+		# Definition of the 'Cod' attribute (which correspond to the previous HTTP/HTTPS response's cod)...
 		self.__cod = weatherResponse_datas["cod"]
 
 	#
