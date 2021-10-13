@@ -33,6 +33,11 @@ class OpenPyther:
 		self.__cod = weatherResponse_datas["cod"]
 
 	#
+	def getCod(self):
+
+		return self.__cod
+
+	#
 	def getCoords(self):
 
 		print("getCoords function...")
