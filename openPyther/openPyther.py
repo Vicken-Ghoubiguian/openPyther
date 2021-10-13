@@ -35,7 +35,7 @@ class OpenPyther:
 
 		self.__error = ""
 
-		#print(weatherResponse_datas["coord"])
+		print(weatherResponse_datas)
 
 		#
 		#self.__coords = Coordinates(weatherResponse_datas["cod"])
