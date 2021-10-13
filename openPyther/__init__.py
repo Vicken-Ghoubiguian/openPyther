@@ -9,4 +9,5 @@ from .UVRiskEnum import *
 from .uv import *
 from .weather import *
 from .wind import *
+from .error import *
 from .openPyther import *
