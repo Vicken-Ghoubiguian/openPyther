@@ -27,6 +27,9 @@ class OpenPyther:
 		#
 		print(type(weatherResponse))
 
+		#
+		print(type(weatherResponse.text))
+
 		print(weatherResponse.text)
 
 	#
