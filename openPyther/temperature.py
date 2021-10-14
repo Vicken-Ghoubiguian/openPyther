@@ -44,4 +44,4 @@ class Temperature:
 	#
 	def __str__(self):
 
-		return ""
+		return self.__value + " " + self.__measureUnitSymbol
