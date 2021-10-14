@@ -20,4 +20,4 @@ class GeographicLocation:
 	#
 	def __str__(self):
 
-		return ""
+		return "(" + self.__cityName + "(" + self.__countryCode + "))"
