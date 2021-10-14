@@ -33,6 +33,17 @@ class OpenPyther:
 			# Definition of the 'Cod' attribute (which correspond to the previous HTTP/HTTPS response's cod)...
 			self.__cod = weatherResponse_datas["cod"]
 
+			#
+			if self.__cod == 200:
+
+				#
+				print("YESSSSSSS....\n")
+
+			#
+			else:
+
+				print("Nooooo....\n")
+
 		#
 		except:
 
