@@ -42,7 +42,8 @@ class OpenPyther:
 			#
 			else:
 
-				print("Nooooo....\n")
+				#
+				self.__error = Error(self.__cod, weatherResponse_datas["message"])
 
 		#
 		except:
