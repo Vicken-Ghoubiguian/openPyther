@@ -20,4 +20,4 @@ class Error:
     #
     def __str__(self):
 
-        return "(Error: " + self.__cod + " - " + self.__message + ")"
+        return "Error: " + self.__cod + " - " + self.__message + ""
