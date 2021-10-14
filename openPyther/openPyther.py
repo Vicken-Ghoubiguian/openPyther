@@ -22,20 +22,38 @@ class OpenPyther:
 	def __init__(self, city, countryCode, APIKey):
 
 		#
-		weatherResponse = requests.post("https://api.openweathermap.org/data/2.5/weather?q=" + city + "," + countryCode + "&appid=" + APIKey + "", None)
+		try:
+
+			#
+			weatherResponse = requests.post("https://api.openweathermap.org/data/2.5/weather?q=" + city + "," + countryCode + "&appid=" + APIKey + "", None)
+
+			#
+			weatherResponse_datas = json.loads(weatherResponse.text)
+
+			#
+			print(weatherResponse_datas)
 
 		#
-		weatherResponse_datas = json.loads(weatherResponse.text)
+		except:
+
+			# Definition of the 'Cod' attribute (which correspond to the previous HTTP/HTTPS response's cod)...
+			#self.__cod = weatherResponse_datas["cod"]
+
+			#
+			self.__error = ""
+
+			#
+			print("Except...\n")
 
 		#
-		print(weatherResponse_datas)
+		#print(weatherResponse_datas)
 
 		# Definition of the 'Cod' attribute (which correspond to the previous HTTP/HTTPS response's cod)...
-		self.__cod = weatherResponse_datas["cod"]
+		#self.__cod = weatherResponse_datas["cod"]
 
-		self.__error = ""
+		#self.__error = ""
 
-		print(weatherResponse_datas)
+		#print(weatherResponse_datas)
 
 		#
 		#self.__coords = Coordinates(weatherResponse_datas["cod"])
