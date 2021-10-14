@@ -7,6 +7,8 @@ class UV:
 	# Definition of the UV class constructor...
 	def __init__(self, value):
 
+		self.__index = value
+
 		if value <= 2:
 
 			determiedUVRisk = UVRiskEnum.LOW
@@ -27,7 +29,6 @@ class UV:
 
 			determiedUVRisk = UVRiskEnum.EXTREME
 
-		self.__index = value
 		self.__risk = determiedUVRisk
 
 	#
@@ -39,3 +40,8 @@ class UV:
 	def getRisk(self):
 
 		return self.__risk
+
+	#
+	def __str__(self):
+
+		return ""

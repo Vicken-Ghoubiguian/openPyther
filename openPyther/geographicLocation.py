@@ -15,4 +15,9 @@ class GeographicLocation:
 	#
 	def getCityName(self):
 
-		return self.__cityName		
+		return self.__cityName
+
+	#
+	def __str__(self):
+
+		return ""

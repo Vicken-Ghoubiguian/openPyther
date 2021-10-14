@@ -16,3 +16,8 @@ class Humidity:
 	def getUnitOfMeasure(self):
 
 		return self.__unitOfMeasure
+
+	#
+	def __str__(self):
+
+		return ""

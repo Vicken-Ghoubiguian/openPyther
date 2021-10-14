@@ -16,3 +16,8 @@ class Coordinates:
 	def getLatitude(self):
 
 		return self.__latitude
+
+	#
+	def __str__(self):
+
+		return ""

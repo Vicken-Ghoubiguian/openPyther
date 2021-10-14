@@ -16,3 +16,8 @@ class Error:
     def getMessage(self):
 
         return self.__message
+
+    #
+    def __str__(self):
+
+        return ""

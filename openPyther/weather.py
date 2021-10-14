@@ -27,4 +27,9 @@ class Weather:
 	#
 	def getIconUrl(self):
 
-		return self.__iconUrl				
+		return self.__iconUrl
+
+	#
+	def __str__(self):
+
+		return ""

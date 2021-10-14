@@ -21,4 +21,9 @@ class Wind:
 	#
 	def getGust(self):
 
-		return self.__gust			
+		return self.__gust
+
+	#
+	def __str__(self):
+
+		return ""

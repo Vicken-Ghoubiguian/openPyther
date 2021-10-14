@@ -53,4 +53,9 @@ class Pressure:
 	#
 	def getSymbolUnit(self):
 
-		return self.__measureUnitSymbol		
+		return self.__measureUnitSymbol
+
+	#
+	def __str__(self):
+
+		return ""		

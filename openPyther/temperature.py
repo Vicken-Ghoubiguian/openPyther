@@ -40,3 +40,8 @@ class Temperature:
 	def setTemperatureAsFahrenheit(self):
 
 		print("Conversion in Fahrenheit...")
+	
+	#
+	def __str__(self):
+
+		return ""

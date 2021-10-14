@@ -128,3 +128,8 @@ class OpenPyther:
 	def getError(self):
 
 		return self.__error
+
+	#
+	def __str__(self):
+
+		return ""
