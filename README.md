@@ -28,6 +28,8 @@ Python package to get, treat and return weather from the OpenWeatherMap's API.
 <a name="how_was_this_project_developed"></a>
 ## How was this project developed ?
 
+Comming...
+
 <a name="how_does_this_project_work"></a>
 ## How does this project work ?
 
