@@ -36,27 +36,11 @@ class OpenPyther:
 		#
 		except:
 
-			# Definition of the 'Cod' attribute (which correspond to the previous HTTP/HTTPS response's cod)...
-			#self.__cod = weatherResponse_datas["cod"]
-
 			#
 			self.__error = ""
 
 			#
 			print("Except...\n")
-
-		#
-		#print(weatherResponse_datas)
-
-		# Definition of the 'Cod' attribute (which correspond to the previous HTTP/HTTPS response's cod)...
-		#self.__cod = weatherResponse_datas["cod"]
-
-		#self.__error = ""
-
-		#print(weatherResponse_datas)
-
-		#
-		#self.__coords = Coordinates(weatherResponse_datas["cod"])
 
 	#
 	def getCod(self):
