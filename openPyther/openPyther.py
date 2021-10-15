@@ -57,6 +57,11 @@ class OpenPyther:
 				self.__ground_level_pressure = Pressure(value = weatherResponse_datas["main"]["grnd_level"])
 
 				"""
+				Initialisation for humidity...
+				"""
+				self.__humidity = Humidity(value = weatherResponse_datas["main"]["humidity"])
+
+				"""
 				Treatments for UTC offset, localisation and country code...
 				"""
 				self.__utcOffsetAsTimestamp = weatherResponse_datas["timezone"]
