@@ -65,7 +65,7 @@ class OpenPyther:
 				Treatments for UTC offset, localisation and country code...
 				"""
 				self.__utcOffsetAsTimestamp = weatherResponse_datas["timezone"]
-				self.__localisationName = weatherResponse_datas["name"]
+				self.__localisation = weatherResponse_datas["name"]
 				self.__countryCode = weatherResponse_datas["sys"]["country"]
 
 				#
@@ -162,7 +162,7 @@ class OpenPyther:
 	#
 	def getLocation(self):
 
-		print("getLocation function...")
+		self.__localisation
 
 	#
 	def getUltraViolet(self):
