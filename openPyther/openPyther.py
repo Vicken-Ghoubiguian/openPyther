@@ -92,7 +92,7 @@ class OpenPyther:
 	#
 	def getCoords(self):
 
-		print("getCoords function...")
+		return self.__coordinates
 
 	#
 	def getWeather(self):
@@ -102,22 +102,22 @@ class OpenPyther:
 	#
 	def getTemperature(self):
 
-		print("getTemperature function...")
+		return self.__temperature
 
 	#
 	def getFeelingLikeTemperature(self):
 
-		print("getFeelingLikeTemperature function...")
+		return self.__feeling_like_temperature
 
 	#
 	def getMinTemperature(self):
 
-		print("getMinTemperature function...")
+		return self.__minimum_temperature
 
 	#
 	def getMaxTemperature(self):
 
-		print("getMaxTemperature function...")
+		return self.__maximum_temperature
 
 	#
 	def getPressure(self):
