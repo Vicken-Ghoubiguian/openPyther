@@ -20,4 +20,4 @@ class Humidity:
 	#
 	def __str__(self):
 
-		return "Humidity: " + self.__value + " " + self.__unitOfMeasure
+		return self.__value + " " + self.__unitOfMeasure
