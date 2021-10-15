@@ -48,6 +48,14 @@ Comming...
 <a name="a_few_examples"></a>
 ## A few examples
 
+```python
+# Import the main module to use: the OpenPyther one...
+import openPyther.openPyther as openPyther
+
+#
+a = openPyther.OpenPyther("","", "")
+
+
 <a name="useful_links"></a>
 ## Useful links
 
