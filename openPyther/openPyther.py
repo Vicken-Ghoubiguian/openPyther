@@ -125,6 +125,16 @@ class OpenPyther:
 		return self.__pressure
 
 	#
+	def getSeaLevelPressure(self):
+
+		return self.__sea_level_pressure
+
+	#
+	def getGroundLevelPressure(self):
+
+		return self.__ground_level_pressure
+
+	#
 	def getHumidity(self):
 
 		return self.__humidity
