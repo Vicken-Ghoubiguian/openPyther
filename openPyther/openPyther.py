@@ -38,13 +38,11 @@ class OpenPyther:
 
 				
 
-				#
+				""" 
+				Treatments for UTC offset, localisation and country code...
+				"""
 				self.__utcOffsetAsTimestamp = weatherResponse_datas["timezone"]
-
-				#
 				self.__localisationName = weatherResponse_datas["name"]
-
-				#
 				self.__countryCode = ""
 
 				#
