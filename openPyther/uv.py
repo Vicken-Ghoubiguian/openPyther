@@ -45,7 +45,7 @@ class UV:
 	#
 	def getRisk(self):
 
-		return self.__getRiskAsString(self.__risk)
+		return self.__getRiskAsString()
 
 	#
 	def __getRiskAsString(self):
