@@ -50,7 +50,30 @@ class UV:
 	#
 	def __getRiskAsString(self):
 
-		print('dddd')
+		#
+		if self.__risk == UVRiskEnum.LOW:
+
+			return "Low"
+
+		#
+		elif self.__risk == UVRiskEnum.MODERATE:
+
+			return "Moderate"
+
+		#
+		elif self.__risk == UVRiskEnum.HIGH:
+
+			return "High"
+
+		#
+		elif self.__risk == UVRiskEnum.VERY_HIGH:
+
+			return "Very high"
+
+		#
+		else:
+
+			return "Extreme"
 
 	#
 	def __str__(self):
