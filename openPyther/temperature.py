@@ -9,7 +9,6 @@ class Temperature:
 
 		self.__value = value
 		self.__measureUnit = temperatureEnum.TemperatureEnum.KELVIN
-		#self.__measureUnitSymbol = "K"
 
 	#
 	def getValue(self):
@@ -22,9 +21,40 @@ class Temperature:
 		return self.__measureUnit
 
 	#
-	#def getSymbolUnit(self):
+	def __getSymbolUnit(self):
 
-		#return self.__measureUnitSymbol
+		#
+		if self.__measureUnit == temperatureEnum.TemperatureEnum.KELVIN:
+
+			return "K"
+
+		#
+		elif self.__measureUnit == temperatureEnum.TemperatureEnum.CELSIUS:
+
+			return "°C"
+
+		#
+		else:
+
+			return "°F"
+
+	#
+	def __getMeasureUnitAsString(self):
+
+		#
+		if self.__measureUnit == temperatureEnum.TemperatureEnum.KELVIN:
+
+			return "Kelvin"
+
+		#
+		elif self.__measureUnit == temperatureEnum.TemperatureEnum.CELSIUS:
+
+			return "Celsius"
+
+		#
+		else:
+
+			return "Fahrenheit"
 
 	#
 	def setTemperatureAsKelvin(self):
@@ -44,4 +74,4 @@ class Temperature:
 	#
 	def __str__(self):
 
-		return self.__value + " " #+ self.__measureUnitSymbol
+		return self.__value + " " + self.__getSymbolUnit() + " (" + self.__getMeasureUnitAsString() + ")"
