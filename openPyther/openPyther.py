@@ -36,17 +36,19 @@ class OpenPyther:
 			#
 			if self.__cod == 200:
 
-				
+				"""
+				"""
+				weatherResponse_datas_sys = json.loads(weatherResponse_datas["sys"])
 
 				""" 
 				Treatments for UTC offset, localisation and country code...
 				"""
 				self.__utcOffsetAsTimestamp = weatherResponse_datas["timezone"]
 				self.__localisationName = weatherResponse_datas["name"]
-				self.__countryCode = ""
+				self.__countryCode = weatherResponse_datas_sys["country"]
 
 				#
-				print("YESSSSSSS....\n")
+				print(self.__countryCode + "...\n")
 
 			#
 			else:
