@@ -79,10 +79,13 @@ class OpenPyther:
 				self.__error = Error(self.__cod, weatherResponse_datas["message"])
 
 		#
-		except:
+		except ConnectionError as e:
 
 			#
-			self.__error = ""
+			print(e)
+
+			#
+			#self.__error = ""
 
 	#
 	def getCod(self):
