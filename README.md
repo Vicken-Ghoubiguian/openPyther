@@ -36,6 +36,8 @@ Comming...
 <a name="how_to_install_it"></a>
 ## How to install it ?
 
+Comming...
+
 <a name="from_pypi"></a>
 ### From PyPi
 
