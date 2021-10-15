@@ -78,4 +78,4 @@ class UV:
 	#
 	def __str__(self):
 
-		return self.__index + " (" + self.__getRiskAsString() + ")"
+		return "{} ({})".format(str(self.__index), str(self.__getRiskAsString()))

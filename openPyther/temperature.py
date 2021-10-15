@@ -74,4 +74,4 @@ class Temperature:
 	#
 	def __str__(self):
 
-		return self.__value + " " + self.__getSymbolUnit() + " (" + self.__getMeasureUnitAsString() + ")"
+		return "{} {} ({})".format(str(self.__value), str(self.__getSymbolUnit()), str(self.__getMeasureUnitAsString()))

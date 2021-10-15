@@ -19,5 +19,5 @@ class Error:
 
     #
     def __str__(self):
-
-        return self.__cod + ": " + self.__message + ""
+        
+        return "{}: {}".format(str(self.__cod), str(self.__message))

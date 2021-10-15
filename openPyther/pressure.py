@@ -58,4 +58,4 @@ class Pressure:
 	#
 	def __str__(self):
 
-		return self.__value + " "
+		return "{} ".format(str(self.__value))

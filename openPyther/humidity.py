@@ -20,4 +20,5 @@ class Humidity:
 	#
 	def __str__(self):
 
-		return self.__value + " " + self.__unitOfMeasure
+		#return self.__value + " " + self.__unitOfMeasure
+		return "{} {}".format(str(self.__value), str(self.__unitOfMeasure))

@@ -32,4 +32,4 @@ class Weather:
 	#
 	def __str__(self):
 
-		return "[id: " + self.__id + ", main: " + self.__main + ", description: " + self.__description + ", icon URL: " + self.__iconUrl + "]"
+		return "id: {}, main: {}, description: {}, icon URL: {}".format(str(self.__id), str(self.__main), str(self.__description), str(self.__iconUrl))

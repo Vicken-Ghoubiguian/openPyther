@@ -19,5 +19,5 @@ class GeographicLocation:
 
 	#
 	def __str__(self):
-
-		return self.__cityName + " (" + self.__countryCode + ")"
+		
+		return "{} ({})".format(str(self.__cityName), str(self.__countryCode))
