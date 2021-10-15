@@ -42,6 +42,7 @@ class OpenPyther:
 				self.__coordinates = Coordinates(longitude = weatherResponse_datas["coord"]["lon"], latitude = weatherResponse_datas["coord"]["lat"])
 
 				"""
+				Initialisations of all temperatures and treatments for them...
 				"""
 				self.__temperature = Temperature(value = weatherResponse_datas["main"]["temp"])
 				self.__feeling_like_temperature = Temperature(value = weatherResponse_datas["main"]["feels_like"])
