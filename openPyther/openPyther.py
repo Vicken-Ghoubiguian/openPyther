@@ -41,6 +41,13 @@ class OpenPyther:
 				"""
 				self.__coordinates = Coordinates(longitude = weatherResponse_datas["coord"]["lon"], latitude = weatherResponse_datas["coord"]["lat"])
 
+				"""
+				"""
+				self.__temperature = Temperature(value = weatherResponse_datas["main"]["temp"])
+				self.__feeling_like_temperature = Temperature(value = weatherResponse_datas["main"]["feels_like"])
+				self.__minimum_temperature = Temperature(value = weatherResponse_datas["main"]["temp_min"])
+				self.__maximum_temperature = Temperature(value = weatherResponse_datas["main"]["temp_max"])
+
 				""" 
 				Treatments for UTC offset, localisation and country code...
 				"""
@@ -50,6 +57,7 @@ class OpenPyther:
 
 				#
 				print(str(self.__coordinates))
+				print(str(self.__temperature))
 
 			#
 			else:
