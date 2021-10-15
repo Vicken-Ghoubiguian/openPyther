@@ -122,12 +122,12 @@ class OpenPyther:
 	#
 	def getPressure(self):
 
-		print("getPressure function...")
+		return self.__pressure
 
 	#
 	def getHumidity(self):
 
-		print("getHumidity function...")
+		return self.__humidity
 
 	#
 	def getWind(self):
