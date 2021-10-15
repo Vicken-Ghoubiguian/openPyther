@@ -50,6 +50,7 @@ class OpenPyther:
 				self.__maximum_temperature = Temperature(value = weatherResponse_datas["main"]["temp_max"])
 
 				"""
+				Initialisations of all pressures and treatments for them...
 				"""
 				self.__pressure = Pressure(value = weatherResponse_datas["main"]["pressure"])
 				self.__sea_level_pressure = Pressure(value = weatherResponse_datas["main"]["sea_level"])
