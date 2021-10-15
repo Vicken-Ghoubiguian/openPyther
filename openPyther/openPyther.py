@@ -49,7 +49,13 @@ class OpenPyther:
 				self.__minimum_temperature = Temperature(value = weatherResponse_datas["main"]["temp_min"])
 				self.__maximum_temperature = Temperature(value = weatherResponse_datas["main"]["temp_max"])
 
-				""" 
+				"""
+				"""
+				self.__pressure = Pressure(value = weatherResponse_datas["main"]["pressure"])
+				self.__sea_level_pressure = Pressure(value = weatherResponse_datas["main"]["sea_level"])
+				self.__ground_level_pressure = Pressure(value = weatherResponse_datas["main"]["grnd_level"])
+
+				"""
 				Treatments for UTC offset, localisation and country code...
 				"""
 				self.__utcOffsetAsTimestamp = weatherResponse_datas["timezone"]
