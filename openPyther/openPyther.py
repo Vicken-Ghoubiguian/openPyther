@@ -163,6 +163,11 @@ class OpenPyther:
 		print("getSunset function...")
 
 	#
+	def getUTCOffsetAsTimestamp(self):
+
+		self.__utcOffsetAsTimestamp
+
+	#
 	def getLocation(self):
 
 		self.__localisation
