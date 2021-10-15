@@ -36,6 +36,17 @@ class OpenPyther:
 			#
 			if self.__cod == 200:
 
+				
+
+				#
+				self.__utcOffsetAsTimestamp = weatherResponse_datas["timezone"]
+
+				#
+				self.__localisationName = weatherResponse_datas["name"]
+
+				#
+				self.__countryCode = ""
+
 				#
 				print("YESSSSSSS....\n")
 
