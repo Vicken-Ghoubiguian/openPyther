@@ -32,4 +32,4 @@ class Weather:
 	#
 	def __str__(self):
 
-		return ""
+		return "[id: " + self.__id + ", main: " + self.__main + ", description: " + self.__description + ", icon URL: " + self.__iconUrl + "]"
