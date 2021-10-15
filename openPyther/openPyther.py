@@ -160,9 +160,9 @@ class OpenPyther:
 		print("getSunset function...")
 
 	#
-	def getGeographicLocation(self):
+	def getLocation(self):
 
-		print("getGeographicLocation function...")
+		print("getLocation function...")
 
 	#
 	def getUltraViolet(self):
