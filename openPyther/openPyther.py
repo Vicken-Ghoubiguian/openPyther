@@ -140,6 +140,11 @@ class OpenPyther:
 		return self.__humidity
 
 	#
+	def getCountryCode(self):
+
+		return self.__countryCode
+
+	#
 	def getWind(self):
 
 		print("getWind function...")
