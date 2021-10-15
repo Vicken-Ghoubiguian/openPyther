@@ -39,7 +39,7 @@ class OpenPyther:
 				"""
 				Initialisation of coordinates...
 				"""
-				self.__coordinates = Coordinates(weatherResponse_datas["coord"]["lon"], weatherResponse_datas["coord"]["lat"])
+				self.__coordinates = Coordinates(longitude = weatherResponse_datas["coord"]["lon"], latitude = weatherResponse_datas["coord"]["lat"])
 
 				""" 
 				Treatments for UTC offset, localisation and country code...
@@ -49,7 +49,7 @@ class OpenPyther:
 				self.__countryCode = weatherResponse_datas["sys"]["country"]
 
 				#
-				#print(str(self.__coordinates))
+				print(str(self.__coordinates))
 
 			#
 			else:

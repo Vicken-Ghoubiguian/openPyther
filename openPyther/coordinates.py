@@ -20,4 +20,4 @@ class Coordinates:
 	#
 	def __str__(self):
 
-		return "(longitude: " + self.__longitude + ", latitude: " + self.__latitude + ")"
+		return "(longitude: {}, latitude: {})".format(str(self.__longitude), str(self.__latitude))
