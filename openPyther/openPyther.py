@@ -37,18 +37,19 @@ class OpenPyther:
 			if self.__cod == 200:
 
 				"""
+				Initialisation of coordinates...
 				"""
-				weatherResponse_datas_sys = json.loads(weatherResponse_datas["sys"])
+				self.__coordinates = Coordinates(weatherResponse_datas["coord"]["lon"], weatherResponse_datas["coord"]["lat"])
 
 				""" 
 				Treatments for UTC offset, localisation and country code...
 				"""
 				self.__utcOffsetAsTimestamp = weatherResponse_datas["timezone"]
 				self.__localisationName = weatherResponse_datas["name"]
-				self.__countryCode = weatherResponse_datas_sys["country"]
+				self.__countryCode = weatherResponse_datas["sys"]["country"]
 
 				#
-				print(self.__countryCode + "...\n")
+				#print(str(self.__coordinates))
 
 			#
 			else:
@@ -61,9 +62,6 @@ class OpenPyther:
 
 			#
 			self.__error = ""
-
-			#
-			print("Except...\n")
 
 	#
 	def getCod(self):
