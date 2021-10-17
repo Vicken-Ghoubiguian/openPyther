@@ -56,6 +56,9 @@ import openPyther.openPyther as openPyther
 
 #
 a = openPyther.OpenPyther("<wishedLocalisation>","<wishedCountryCode>", "<OpenWeather API Key>")
+
+# 
+a
 ```
 
 <a name="useful_links"></a>
