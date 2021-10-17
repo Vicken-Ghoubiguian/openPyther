@@ -54,11 +54,11 @@ Comming...
 # Import the main module to use: the OpenPyther one...
 import openPyther.openPyther as openPyther
 
-#
-a = openPyther.OpenPyther("<wishedLocalisation>","<wishedCountryCode>", "<OpenWeather API Key>")
+# Initialisation 
+openPytherObject = openPyther.OpenPyther("<wishedLocalisation>","<wishedCountryCode>", "<OpenWeather API Key>")
 
-# 
-a
+# Display the object 'openPyther Object' as a string...
+openPytherObject
 ```
 
 <a name="useful_links"></a>
