@@ -58,7 +58,7 @@ import openPyther.openPyther as openPyther
 openPytherObject = openPyther.OpenPyther("<wishedLocalisation>","<wishedCountryCode>", "<OpenWeather API Key>")
 
 # Display the 'openPyther' object as a string...
-openPytherObject
+print(openPytherObject)
 ```
 
 <a name="useful_links"></a>
