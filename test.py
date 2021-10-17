@@ -3,3 +3,6 @@ import openPyther.openPyther as openPyther
 
 #
 a = openPyther.OpenPyther("","", "")
+
+#
+print(a)
