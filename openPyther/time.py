@@ -1,6 +1,7 @@
 # Definition of the Time class...
 class Time:
 
-    def __init__():
+    # Definition of the Time class constructor...
+    def __init__(self, sunriseAsTimestampAccordingToUtc, sunsetAsTimestampAccordingToUtc, utcOffsetAsTimestamp):
 
         print("")

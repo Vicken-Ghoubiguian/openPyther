@@ -78,7 +78,7 @@ class OpenPyther:
 				"""
 				Treatments for sunrise and sunset times...
 				"""
-				self.__time = Time()
+				self.__time = Time(sunriseAsTimestampAccordingToUtc = "", sunsetAsTimestampAccordingToUtc = "", utcOffsetAsTimestamp = "")
 
 				# ...according to UTC...
 				self.__sunriseAsTimestampAccordingToUtc = weatherResponse_datas["sys"]["sunrise"]
