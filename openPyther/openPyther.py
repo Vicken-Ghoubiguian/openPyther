@@ -62,7 +62,7 @@ class OpenPyther:
 				"""
 				Initialisation of all wind datas...
 				"""
-
+				self.__wind = Wind(speed = weatherResponse_datas["speed"]["speed"], deg = weatherResponse_datas["speed"]["deg"], gust = weatherResponse_datas["speed"]["gust"])
 
 				"""
 				Initialisation for humidity...
@@ -156,7 +156,7 @@ class OpenPyther:
 	#
 	def getWind(self):
 
-		print("getWind function...")
+		return self.__wind
 
 	#
 	def getSunriseAsTimestampAccordingToUtc(self):
