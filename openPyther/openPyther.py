@@ -63,6 +63,10 @@ class OpenPyther:
 				self.__pressure = Pressure(value = weatherResponse_datas["main"]["pressure"])
 
 				"""
+				Initialisation of all wind datas...
+				"""
+
+				"""
 				Initialisation for humidity...
 				"""
 				self.__humidity = Humidity(value = weatherResponse_datas["main"]["humidity"])
