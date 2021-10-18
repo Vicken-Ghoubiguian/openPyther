@@ -70,11 +70,9 @@ class OpenPyther:
 				self.__humidity = Humidity(value = weatherResponse_datas["main"]["humidity"])
 
 				"""
-				Treatments for UTC offset, localisation and country code...
+				Initialisation for geographic locations...
 				"""
-				self.__utcOffsetAsTimestamp = weatherResponse_datas["timezone"]
-				#self.__localisation = weatherResponse_datas["name"]
-				#self.__countryCode = weatherResponse_datas["sys"]["country"]
+				self.__geographicLocation = GeographicLocation(countryCode = weatherResponse_datas["sys"]["country"], localisationName = weatherResponse_datas["name"], utcOffsetAsTimestamp = weatherResponse_datas["timezone"])
 
 				"""
 				Treatments for sunrise and sunset times...
@@ -85,8 +83,8 @@ class OpenPyther:
 				self.__sunsetAsTimestampAccordingToUtc = weatherResponse_datas["sys"]["sunset"]
 
 				# ...according to their timezone...
-				self.__sunriseAsTimestampAccordingTheirTimezone = self.__sunriseAsTimestampAccordingToUtc + self.__utcOffsetAsTimestamp
-				self.__sunsetAsTimestampAccordingTheirTimezone = self.__sunsetAsTimestampAccordingToUtc + self.__utcOffsetAsTimestamp
+				self.__sunriseAsTimestampAccordingTheirTimezone = self.__sunriseAsTimestampAccordingToUtc + self.__geographicLocation.getUtcOffsetAsTimestamp()
+				self.__sunsetAsTimestampAccordingTheirTimezone = self.__sunsetAsTimestampAccordingToUtc + self.__geographicLocation.getUtcOffsetAsTimestamp()
 
 				print("Yetz")
 
@@ -151,14 +149,14 @@ class OpenPyther:
 		return self.__humidity
 
 	#
-	#def getCountryCode(self):
-
-		#return self.__countryCode
-
-	#
 	def getWind(self):
 
 		return self.__wind
+
+	#
+	def getGeographicLocation(self):
+
+		return self.__geographicLocation
 
 	#
 	def getSunriseAsTimestampAccordingToUtc(self):
@@ -179,16 +177,6 @@ class OpenPyther:
 	def getSunsetAsTimestampAccordingTheirTimezone(self):
 
 		return self.__sunsetAsTimestampAccordingTheirTimezone
-
-	#
-	#def getUTCOffsetAsTimestamp(self):
-
-		#self.__utcOffsetAsTimestamp
-
-	#
-	#def getLocation(self):
-
-		#self.__localisation
 
 	#
 	def getUltraViolet(self):
