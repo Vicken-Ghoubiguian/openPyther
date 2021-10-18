@@ -172,10 +172,14 @@ class OpenPyther:
 		return self.__sunsetAsTimestampAccordingToUtc
 
 	#
+	def getSunriseAsTimestampAccordingTheirTimezone(self):
 
+		return self.__sunriseAsTimestampAccordingTheirTimezone
 
 	#
+	def getSunsetAsTimestampAccordingTheirTimezone(self):
 
+		return self.__sunsetAsTimestampAccordingTheirTimezone
 
 	#
 	def getUTCOffsetAsTimestamp(self):
