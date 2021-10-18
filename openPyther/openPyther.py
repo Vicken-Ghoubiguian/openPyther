@@ -44,11 +44,6 @@ class OpenPyther:
 				"""
 				Initialisations of all general weather datas...
 				"""
-				#self.__id = weatherResponse_datas["weather"][0]["id"]
-				#self.__main = weatherResponse_datas["weather"][0]["main"]
-				#self.__description = weatherResponse_datas["weather"][0]["description"]
-				#self.__icon = "https://openweathermap.org/img/wn/" + weatherResponse_datas["weather"][0]["icon"] + "@2x.png"
-
 				self.__weather = Weather(id = weatherResponse_datas["weather"][0]["id"], main = weatherResponse_datas["weather"][0]["main"], description = weatherResponse_datas["weather"][0]["description"], icon = weatherResponse_datas["weather"][0]["icon"])
 
 				"""
