@@ -42,7 +42,7 @@ class OpenPyther:
 				self.__coordinates = Coordinates(longitude = weatherResponse_datas["coord"]["lon"], latitude = weatherResponse_datas["coord"]["lat"])
 
 				"""
-				Initialisations 
+				Initialisations of all general weather datas...
 				"""
 				self.__id = weatherResponse_datas["weather"][0]["id"]
 				self.__main = weatherResponse_datas["weather"][0]["main"]
