@@ -116,9 +116,24 @@ class OpenPyther:
 		return self.__coordinates
 
 	#
-	def getWeather(self):
+	def getId(self):
 
-		print("getWeather function...")
+		return self.__id
+
+	#
+	def getMain(self):
+
+		return self.__main
+
+	#
+	def getDescription(self):
+
+		return self.__description
+
+	#
+	def getIcon(self):
+
+		return self.__icon
 
 	#
 	def getTemperature(self):
