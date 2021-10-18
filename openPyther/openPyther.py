@@ -69,7 +69,7 @@ class OpenPyther:
 				self.__countryCode = weatherResponse_datas["sys"]["country"]
 
 				"""
-				
+				Treatments for sunrise and sunset times...
 				"""
 				self.__sunriseAsTimestampAccordingToUtc = weatherResponse_datas["sys"]["sunrise"]
 				self.__sunsetAsTimestampAccordingToUtc = weatherResponse_datas["sys"]["sunset"]
