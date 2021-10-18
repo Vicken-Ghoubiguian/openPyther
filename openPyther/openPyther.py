@@ -77,6 +77,8 @@ class OpenPyther:
 				self.__sunriseAsTimestampAccordingTheirTimezone = self.__sunriseAsTimestampAccordingToUtc + self.__utcOffsetAsTimestamp
 				self.__sunsetAsTimestampAccordingTheirTimezone = self.__sunsetAsTimestampAccordingToUtc + self.__utcOffsetAsTimestamp
 
+				print(weatherResponse_datas["weather"])
+
 				#
 				print(self.__coordinates)
 				print(self.__temperature)
