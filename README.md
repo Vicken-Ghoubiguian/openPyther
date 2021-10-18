@@ -1,4 +1,5 @@
 # openPyther
+
 Python package to get, treat and return weather from the OpenWeatherMap's API. Moreover, this PyPi module was developed to be used in online courses on web APIs at IMERIR. The development project of these courses on web APIs at IMERIR is available just here.
 
 ## Contents
