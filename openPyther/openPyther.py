@@ -50,11 +50,9 @@ class OpenPyther:
 				self.__maximum_temperature = Temperature(value = weatherResponse_datas["main"]["temp_max"])
 
 				"""
-				Initialisations of all pressures and treatments for them...
+				Initialisations of pressure and treatments for it...
 				"""
 				self.__pressure = Pressure(value = weatherResponse_datas["main"]["pressure"])
-				self.__sea_level_pressure = Pressure(value = weatherResponse_datas["main"]["sea_level"])
-				self.__ground_level_pressure = Pressure(value = weatherResponse_datas["main"]["grnd_level"])
 
 				"""
 				Initialisation for humidity...
@@ -137,16 +135,6 @@ class OpenPyther:
 	def getPressure(self):
 
 		return self.__pressure
-
-	#
-	def getSeaLevelPressure(self):
-
-		return self.__sea_level_pressure
-
-	#
-	def getGroundLevelPressure(self):
-
-		return self.__ground_level_pressure
 
 	#
 	def getHumidity(self):
