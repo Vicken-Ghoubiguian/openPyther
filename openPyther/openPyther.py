@@ -42,6 +42,19 @@ class OpenPyther:
 				self.__coordinates = Coordinates(longitude = weatherResponse_datas["coord"]["lon"], latitude = weatherResponse_datas["coord"]["lat"])
 
 				"""
+				
+				"""
+				generalWeatherDatas = weatherResponse_datas["weather"][0]
+
+				print(generalWeatherDatas)
+
+				#generalWeatherDatas = json.loads(weatherResponse_datas["weather"]["0"])
+
+				"""
+				
+				"""
+
+				"""
 				Initialisations of all temperatures and treatments for them...
 				"""
 				self.__temperature = Temperature(value = weatherResponse_datas["main"]["temp"])
@@ -74,8 +87,6 @@ class OpenPyther:
 
 				self.__sunriseAsTimestampAccordingTheirTimezone = self.__sunriseAsTimestampAccordingToUtc + self.__utcOffsetAsTimestamp
 				self.__sunsetAsTimestampAccordingTheirTimezone = self.__sunsetAsTimestampAccordingToUtc + self.__utcOffsetAsTimestamp
-
-				print(weatherResponse_datas["weather"])
 
 				#
 				print(self.__coordinates)
