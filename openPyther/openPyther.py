@@ -86,8 +86,6 @@ class OpenPyther:
 				self.__sunriseAsTimestampAccordingTheirTimezone = self.__sunriseAsTimestampAccordingToUtc + self.__geographicLocation.getUtcOffsetAsTimestamp()
 				self.__sunsetAsTimestampAccordingTheirTimezone = self.__sunsetAsTimestampAccordingToUtc + self.__geographicLocation.getUtcOffsetAsTimestamp()
 
-				print("Yetz")
-
 			#
 			else:
 
@@ -191,4 +189,4 @@ class OpenPyther:
 	#
 	def __str__(self):
 
-		return ""
+		return "Yetz"
