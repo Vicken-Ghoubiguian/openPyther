@@ -151,7 +151,9 @@ class OpenPyther:
 		return self.__geographicLocation
 
 	#
-	
+	def getTime(self):
+
+		return self.__time
 
 	#
 	def getUltraViolet(self):
