@@ -42,19 +42,12 @@ class OpenPyther:
 				self.__coordinates = Coordinates(longitude = weatherResponse_datas["coord"]["lon"], latitude = weatherResponse_datas["coord"]["lat"])
 
 				"""
-				
+				Initialisations 
 				"""
-				generalWeather = weatherResponse_datas["weather"][0]
-
-				print(type(generalWeather))
-
-				#generalWeatherDatas = json.loads(str(generalWeather))
-
-				#print(generalWeatherDatas)
-
-				"""
-				
-				"""
+				self.__id = weatherResponse_datas["weather"][0]["id"]
+				self.__main = weatherResponse_datas["weather"][0]["main"]
+				self.__description = weatherResponse_datas["weather"][0]["description"]
+				self.__icon = "https://openweathermap.org/img/wn/" + weatherResponse_datas["weather"][0]["icon"] + "@2x.png"
 
 				"""
 				Initialisations of all temperatures and treatments for them...
@@ -65,7 +58,7 @@ class OpenPyther:
 				self.__maximum_temperature = Temperature(value = weatherResponse_datas["main"]["temp_max"])
 
 				"""
-				Initialisations of pressure and treatments for it...
+				Initialisation of pressure and treatments for it...
 				"""
 				self.__pressure = Pressure(value = weatherResponse_datas["main"]["pressure"])
 
