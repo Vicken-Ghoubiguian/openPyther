@@ -7,6 +7,7 @@ from .pressureEnum import *
 from .temperature import *
 from .UVRiskEnum import *
 from .uv import *
+from .time import *
 from .weather import *
 from .wind import *
 from .error import *

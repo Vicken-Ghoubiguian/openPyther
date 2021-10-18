@@ -5,6 +5,7 @@ from . import Humidity
 from . import Pressure
 from . import Temperature
 from . import UV
+from . import Time
 from . import Weather
 from . import Wind
 from . import Error
