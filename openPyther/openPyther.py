@@ -62,7 +62,7 @@ class OpenPyther:
 				"""
 				Initialisation of all wind datas...
 				"""
-				self.__wind = Wind(speed = weatherResponse_datas["speed"]["speed"], deg = weatherResponse_datas["speed"]["deg"], gust = weatherResponse_datas["speed"]["gust"])
+				self.__wind = Wind(speed = weatherResponse_datas["wind"]["speed"], deg = weatherResponse_datas["wind"]["deg"])
 
 				"""
 				Initialisation for humidity...
@@ -73,8 +73,8 @@ class OpenPyther:
 				Treatments for UTC offset, localisation and country code...
 				"""
 				self.__utcOffsetAsTimestamp = weatherResponse_datas["timezone"]
-				self.__localisation = weatherResponse_datas["name"]
-				self.__countryCode = weatherResponse_datas["sys"]["country"]
+				#self.__localisation = weatherResponse_datas["name"]
+				#self.__countryCode = weatherResponse_datas["sys"]["country"]
 
 				"""
 				Treatments for sunrise and sunset times...
@@ -87,6 +87,8 @@ class OpenPyther:
 				# ...according to their timezone...
 				self.__sunriseAsTimestampAccordingTheirTimezone = self.__sunriseAsTimestampAccordingToUtc + self.__utcOffsetAsTimestamp
 				self.__sunsetAsTimestampAccordingTheirTimezone = self.__sunsetAsTimestampAccordingToUtc + self.__utcOffsetAsTimestamp
+
+				print("Yetz")
 
 			#
 			else:
@@ -149,9 +151,9 @@ class OpenPyther:
 		return self.__humidity
 
 	#
-	def getCountryCode(self):
+	#def getCountryCode(self):
 
-		return self.__countryCode
+		#return self.__countryCode
 
 	#
 	def getWind(self):
@@ -179,14 +181,14 @@ class OpenPyther:
 		return self.__sunsetAsTimestampAccordingTheirTimezone
 
 	#
-	def getUTCOffsetAsTimestamp(self):
+	#def getUTCOffsetAsTimestamp(self):
 
-		self.__utcOffsetAsTimestamp
+		#self.__utcOffsetAsTimestamp
 
 	#
-	def getLocation(self):
+	#def getLocation(self):
 
-		self.__localisation
+		#self.__localisation
 
 	#
 	def getUltraViolet(self):

@@ -2,11 +2,10 @@
 class Wind:
 
 	# Definition of the Wind class constructor...
-	def __init__(self, speed, deg, gust):
+	def __init__(self, speed, deg):
 
 		self.__speed = speed
 		self.__deg = deg
-		self.__gust = gust
 
 	#
 	def getSpeed(self):
@@ -17,11 +16,6 @@ class Wind:
 	def getDeg(self):
 
 		return self.__deg
-
-	#
-	def getGust(self):
-
-		return self.__gust
 
 	#
 	def __str__(self):
