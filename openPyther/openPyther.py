@@ -162,17 +162,17 @@ class OpenPyther:
 		print("getWind function...")
 
 	#
-	def getSunrise(self):
+	def getSunriseAsTimestampAccordingToUtc(self):
 
-		print("getSunrise function...")
-
-	#
-	def getSunset(self):
-
-		print("getSunset function...")
+		return self.__sunriseAsTimestampAccordingToUtc
 
 	#
-	
+	def getSunsetAsTimestampAccordingToUtc(self):
+
+		return self.__sunsetAsTimestampAccordingToUtc
+
+	#
+
 
 	#
 
