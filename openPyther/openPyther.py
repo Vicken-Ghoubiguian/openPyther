@@ -43,7 +43,7 @@ class OpenPyther:
 				self.__coordinates = Coordinates(longitude = weatherResponse_datas["coord"]["lon"], latitude = weatherResponse_datas["coord"]["lat"])
 
 				"""
-				Initialisations of all general weather datas...
+				Initialisations of weather...
 				"""
 				self.__weather = Weather(id = weatherResponse_datas["weather"][0]["id"], main = weatherResponse_datas["weather"][0]["main"], description = weatherResponse_datas["weather"][0]["description"], icon = weatherResponse_datas["weather"][0]["icon"])
 
@@ -78,6 +78,7 @@ class OpenPyther:
 				"""
 				Treatments for sunrise and sunset times...
 				"""
+				self.__time = Time()
 
 				# ...according to UTC...
 				self.__sunriseAsTimestampAccordingToUtc = weatherResponse_datas["sys"]["sunrise"]
