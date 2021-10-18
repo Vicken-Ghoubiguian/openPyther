@@ -80,14 +80,6 @@ class OpenPyther:
 				"""
 				self.__time = Time(sunriseAsTimestampAccordingToUtc = weatherResponse_datas["sys"]["sunrise"], sunsetAsTimestampAccordingToUtc = weatherResponse_datas["sys"]["sunset"], utcOffsetAsTimestamp = weatherResponse_datas["timezone"])
 
-				# ...according to UTC...
-				#self.__sunriseAsTimestampAccordingToUtc = weatherResponse_datas["sys"]["sunrise"]
-				#self.__sunsetAsTimestampAccordingToUtc = weatherResponse_datas["sys"]["sunset"]
-
-				# ...according to their timezone...
-				#self.__sunriseAsTimestampAccordingTheirTimezone = self.__sunriseAsTimestampAccordingToUtc + self.__geographicLocation.getUtcOffsetAsTimestamp()
-				#self.__sunsetAsTimestampAccordingTheirTimezone = self.__sunsetAsTimestampAccordingToUtc + self.__geographicLocation.getUtcOffsetAsTimestamp()
-
 			#
 			else:
 
@@ -159,24 +151,7 @@ class OpenPyther:
 		return self.__geographicLocation
 
 	#
-	#def getSunriseAsTimestampAccordingToUtc(self):
-
-		#return self.__sunriseAsTimestampAccordingToUtc
-
-	#
-	#def getSunsetAsTimestampAccordingToUtc(self):
-
-		#return self.__sunsetAsTimestampAccordingToUtc
-
-	#
-	#def getSunriseAsTimestampAccordingTheirTimezone(self):
-
-		#return self.__sunriseAsTimestampAccordingTheirTimezone
-
-	#
-	#def getSunsetAsTimestampAccordingTheirTimezone(self):
-
-		#return self.__sunsetAsTimestampAccordingTheirTimezone
+	
 
 	#
 	def getUltraViolet(self):
