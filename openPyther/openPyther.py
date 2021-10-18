@@ -68,9 +68,18 @@ class OpenPyther:
 				self.__localisation = weatherResponse_datas["name"]
 				self.__countryCode = weatherResponse_datas["sys"]["country"]
 
+				"""
+				
+				"""
+				self.__sunriseAsTimestampAccordingToUtc = weatherResponse_datas["sys"]["sunrise"]
+				self.__sunsetAsTimestampAccordingToUtc = weatherResponse_datas["sys"]["sunset"]
+
+				self.__sunriseAsTimestampAccordingTheirTimezone = self.__sunriseAsTimestampAccordingToUtc + self.__utcOffsetAsTimestamp
+				self.__sunsetAsTimestampAccordingTheirTimezone = self.__sunsetAsTimestampAccordingToUtc + self.__utcOffsetAsTimestamp
+
 				#
-				print(str(self.__coordinates))
-				print(str(self.__temperature))
+				print(self.__coordinates)
+				print(self.__temperature)
 
 			#
 			else:
