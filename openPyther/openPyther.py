@@ -44,11 +44,13 @@ class OpenPyther:
 				"""
 				
 				"""
-				generalWeatherDatas = weatherResponse_datas["weather"][0]
+				generalWeather = weatherResponse_datas["weather"][0]
 
-				print(generalWeatherDatas)
+				print(type(generalWeather))
 
-				#generalWeatherDatas = json.loads(weatherResponse_datas["weather"]["0"])
+				#generalWeatherDatas = json.loads(str(generalWeather))
+
+				#print(generalWeatherDatas)
 
 				"""
 				
