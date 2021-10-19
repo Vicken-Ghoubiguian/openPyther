@@ -7,7 +7,7 @@ class Weather:
 		self.__id = id
 		self.__main = main
 		self.__description = description
-		self.__iconUrl = "https://openweathermap.org/img/wn/" + icon + ".png"
+		self.__iconUrl = "https://openweathermap.org/img/wn/" + icon + "@2x.png"
 
 	#
 	def getId(self):
