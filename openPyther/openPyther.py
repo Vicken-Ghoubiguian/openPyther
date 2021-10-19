@@ -173,4 +173,5 @@ class OpenPyther:
 						"\033[4m" + "Geographic location" + ":\033[0m " + str(self.__geographicLocation) + "\n" + \
 						"\033[4m" + "Temperature" + ":\033[0m " + str(self.__temperature) + "\n" + \
 						"\033[4m" + "Feeling like temperature" + ":\033[0m " + str(self.__feeling_like_temperature) + "\n" + \
+						"\033[4m" + "Pressure" + ":\033[0m " + str(self.__pressure) + "\n" + \
 						"\033[4m" + "Humidity" + ":\033[0m " + str(self.__humidity) + "\n"
