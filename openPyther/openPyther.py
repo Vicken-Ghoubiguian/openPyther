@@ -168,6 +168,6 @@ class OpenPyther:
 	#
 	def __str__(self):
 
-		return "\n" + "\033[4m" + "Coordinates" + ":\033[0m " + str(self.__coordinates) + "\n" + \
-						"\033[4m" + "Weather" + ":\033[0m " + str(self.__weather) + "\n" + "\033[4m" + \
-						"Geographic location" + ":\033[0m " + str(self.__geographicLocation) + "\n"
+		return "\n" + 	"\033[4m" + "Coordinates" + ":\033[0m " + str(self.__coordinates) + "\n" + \
+						"\033[4m" + "Weather" + ":\033[0m " + str(self.__weather) + "\n" + \
+						"\033[4m" + "Geographic location" + ":\033[0m " + str(self.__geographicLocation) + "\n"
