@@ -168,4 +168,4 @@ class OpenPyther:
 	#
 	def __str__(self):
 
-		return "Yetz"
+		return "\n" + "\033[4m" + "Coordinates" + ":\033[0m " + str(self.__coordinates) + "\n"
