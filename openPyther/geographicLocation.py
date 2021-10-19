@@ -26,4 +26,4 @@ class GeographicLocation:
 	#
 	def __str__(self):
 		
-		return "{} ({})".format(str(self.__localisationName), str(self.__countryCode))
+		return "[{} ({})]".format(str(self.__localisationName), str(self.__countryCode))
