@@ -168,15 +168,25 @@ class OpenPyther:
 	#
 	def __str__(self):
 
-		return "\n" + 	"\033[4m" + "Coordinates" + ":\033[0m " + str(self.__coordinates) + "\n" + \
-						"\033[4m" + "Weather" + ":\033[0m " + str(self.__weather) + "\n" + \
-						"\033[4m" + "Geographic location" + ":\033[0m " + str(self.__geographicLocation) + "\n" + \
-						"\033[4m" + "Temperature" + ":\033[0m " + str(self.__temperature) + "\n" + \
-						"\033[4m" + "Feeling like temperature" + ":\033[0m " + str(self.__feeling_like_temperature) + "\n" + \
-						"\033[4m" + "Minimum expected temperature" + ":\033[0m " + str(self.__minimum_temperature) + "\n" + \
-						"\033[4m" + "Maximum expected temperature" + ":\033[0m " + str(self.__maximum_temperature) + "\n" + \
-						"\033[4m" + "Pressure" + ":\033[0m " + str(self.__pressure) + "\n" + \
-						"\033[4m" + "Humidity" + ":\033[0m " + str(self.__humidity) + "\n" + \
-						"\033[4m" + "Wind" + ":\033[0m " + str(self.__wind) + "\n" + \
-						"\033[4m" + "Sunrise time" + ":\033[0m " + str(self.__time.getSunriseAsTimestampAccordingTheirTimezone()) + "\n" + \
-						"\033[4m" + "Sunset time" + ":\033[0m " + str(self.__time.getSunsetAsTimestampAccordingTheirTimezone()) + "\n"
+		#
+		if self.__cod == 200:
+
+			#
+			return "\n" + 	"\033[4m" + "Coordinates" + ":\033[0m " + str(self.__coordinates) + "\n" + \
+							"\033[4m" + "Weather" + ":\033[0m " + str(self.__weather) + "\n" + \
+							"\033[4m" + "Geographic location" + ":\033[0m " + str(self.__geographicLocation) + "\n" + \
+							"\033[4m" + "Temperature" + ":\033[0m " + str(self.__temperature) + "\n" + \
+							"\033[4m" + "Feeling like temperature" + ":\033[0m " + str(self.__feeling_like_temperature) + "\n" + \
+							"\033[4m" + "Minimum expected temperature" + ":\033[0m " + str(self.__minimum_temperature) + "\n" + \
+							"\033[4m" + "Maximum expected temperature" + ":\033[0m " + str(self.__maximum_temperature) + "\n" + \
+							"\033[4m" + "Pressure" + ":\033[0m " + str(self.__pressure) + "\n" + \
+							"\033[4m" + "Humidity" + ":\033[0m " + str(self.__humidity) + "\n" + \
+							"\033[4m" + "Wind" + ":\033[0m " + str(self.__wind) + "\n" + \
+							"\033[4m" + "Sunrise time" + ":\033[0m " + str(self.__time.getSunriseAsTimestampAccordingTheirTimezone()) + "\n" + \
+							"\033[4m" + "Sunset time" + ":\033[0m " + str(self.__time.getSunsetAsTimestampAccordingTheirTimezone()) + "\n"
+
+		#
+		else:
+
+			#
+			return "\n...ERROR...\n"
