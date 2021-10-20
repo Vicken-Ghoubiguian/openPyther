@@ -63,10 +63,18 @@ class Temperature:
 		if self.__measureUnit == temperatureEnum.TemperatureEnum.CELSIUS:
 
 			#
+			self.__value = self.__value - 273.15
+			self.__measureUnit = temperatureEnum.TemperatureEnum.KELVIN
+
+			#
 			print("")
 
 		#
 		elif self.__measureUnit == temperatureEnum.TemperatureEnum.FAHRENHEIT:
+
+			#
+			self.__value = (self.__value - 32) * (5.0/9.0) + 273.15
+			self.__measureUnit = temperatureEnum.TemperatureEnum.KELVIN
 
 			#
 			print("")
