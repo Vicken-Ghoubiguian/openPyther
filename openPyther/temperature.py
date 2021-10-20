@@ -59,7 +59,21 @@ class Temperature:
 	#
 	def setTemperatureAsKelvin(self):
 
-		print("Conversion in Kelvin...")
+		#
+		if self.__measureUnit == temperatureEnum.TemperatureEnum.CELSIUS:
+
+			#
+			print("")
+
+		#
+		elif self.__measureUnit == temperatureEnum.TemperatureEnum.FAHRENHEIT:
+
+			print("")
+
+		#
+		else:
+
+			print("")
 
 	#
 	def setTemperatureAsCelsius(self):
