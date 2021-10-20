@@ -67,7 +67,7 @@ class Temperature:
 			self.__measureUnit = temperatureEnum.TemperatureEnum.KELVIN
 
 			#
-			print("")
+			print("\nTemperature converted from Celsius (°C) to Kelvin (K)\n")
 
 		#
 		elif self.__measureUnit == temperatureEnum.TemperatureEnum.FAHRENHEIT:
@@ -77,7 +77,7 @@ class Temperature:
 			self.__measureUnit = temperatureEnum.TemperatureEnum.KELVIN
 
 			#
-			print("")
+			print("\nTemperature converted from Fahrenheit (°F) to Kelvin (K)\n")
 
 		#
 		else:
@@ -96,7 +96,7 @@ class Temperature:
 			self.__measureUnit = temperatureEnum.TemperatureEnum.CELSIUS
 
 			#
-			print("")
+			print("\nTemperature converted from Kelvin (K) to Celsius (°C)\n")
 
 		#
 		elif self.__measureUnit == temperatureEnum.TemperatureEnum.FAHRENHEIT:
@@ -106,7 +106,7 @@ class Temperature:
 			self.__measureUnit = temperatureEnum.TemperatureEnum.CELSIUS
 
 			#
-			print("")
+			print("\nTemperature converted from Fahrenheit (°F) to Celsius (°C)\n")
 
 		#
 		else:
@@ -125,7 +125,7 @@ class Temperature:
 			self.__measureUnit = temperatureEnum.TemperatureEnum.FAHRENHEIT
 
 			#
-			print("")
+			print("\nTemperature converted from Celsius (°C) to Fahrenheit (°F)\n")
 
 		#
 		elif self.__measureUnit == temperatureEnum.TemperatureEnum.KELVIN:
@@ -135,7 +135,7 @@ class Temperature:
 			self.__measureUnit = temperatureEnum.TemperatureEnum.FAHRENHEIT
 
 			#
-			print("")
+			print("\nTemperature converted from Kelvin (K) to Fahrenheit (°F)\n")
 
 		#
 		else:
