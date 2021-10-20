@@ -177,5 +177,5 @@ class OpenPyther:
 						"\033[4m" + "Maximum expected temperature" + ":\033[0m " + str(self.__maximum_temperature) + "\n" + \
 						"\033[4m" + "Pressure" + ":\033[0m " + str(self.__pressure) + "\n" + \
 						"\033[4m" + "Humidity" + ":\033[0m " + str(self.__humidity) + "\n" + \
-						"\033[4m" + "Sunrise time" + ":\033[0m " + str(self.__time) + "\n" + \
-						"\033[4m" + "Sunset time" + ":\033[0m " + str(self.__time) + "\n"
+						"\033[4m" + "Sunrise time" + ":\033[0m " + str(self.__time.getSunriseAsTimestampAccordingTheirTimezone()) + "\n" + \
+						"\033[4m" + "Sunset time" + ":\033[0m " + str(self.__time.getSunsetAsTimestampAccordingTheirTimezone()) + "\n"
