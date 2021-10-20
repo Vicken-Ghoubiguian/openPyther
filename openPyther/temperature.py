@@ -68,12 +68,14 @@ class Temperature:
 		#
 		elif self.__measureUnit == temperatureEnum.TemperatureEnum.FAHRENHEIT:
 
+			#
 			print("")
 
 		#
 		else:
 
-			print("")
+			#
+			print("\nTemperature already in Kelvin (K)\n")
 
 	#
 	def setTemperatureAsCelsius(self):
@@ -87,12 +89,14 @@ class Temperature:
 		#
 		elif self.__measureUnit == temperatureEnum.TemperatureEnum.FAHRENHEIT:
 
+			#
 			print("")
 
 		#
 		else:
 
-			print("")
+			#
+			print("\nTemperature already in Celsius (°C)\n")
 
 	#
 	def setTemperatureAsFahrenheit(self):
@@ -106,12 +110,14 @@ class Temperature:
 		#
 		elif self.__measureUnit == temperatureEnum.TemperatureEnum.KELVIN:
 
+			#
 			print("")
 
 		#
 		else:
 
-			print("")
+			#
+			print("\nTemperature already in Fahrenheit (°F)\n")
 	
 	#
 	def __str__(self):
