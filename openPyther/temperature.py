@@ -78,12 +78,40 @@ class Temperature:
 	#
 	def setTemperatureAsCelsius(self):
 
-		print("Conversion in Celsius...")
+		#
+		if self.__measureUnit == temperatureEnum.TemperatureEnum.KELVIN:
+
+			#
+			print("")
+
+		#
+		elif self.__measureUnit == temperatureEnum.TemperatureEnum.FAHRENHEIT:
+
+			print("")
+
+		#
+		else:
+
+			print("")
 
 	#
 	def setTemperatureAsFahrenheit(self):
 
-		print("Conversion in Fahrenheit...")
+		#
+		if self.__measureUnit == temperatureEnum.TemperatureEnum.CELSIUS:
+
+			#
+			print("")
+
+		#
+		elif self.__measureUnit == temperatureEnum.TemperatureEnum.KELVIN:
+
+			print("")
+
+		#
+		else:
+
+			print("")
 	
 	#
 	def __str__(self):
