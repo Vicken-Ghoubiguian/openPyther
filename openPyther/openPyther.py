@@ -189,4 +189,4 @@ class OpenPyther:
 		else:
 
 			#
-			return "\n" + "\033[0;31m" + "...ERROR..." + "\033[0m" + "\n"
+			return "\n" + "\033[0;31m" + str(self.__error) + "\033[0m" + "\n"
