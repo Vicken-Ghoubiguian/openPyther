@@ -7,12 +7,12 @@ class Error:
         self.__cod = code
         self.__message = message
 
-    # 
+    # Definition of the code's getter...
     def getCode(self):
 
         return self.__cod
 
-    # 
+    # Definition of the message's getter...
     def getMessage(self):
 
         return self.__message
