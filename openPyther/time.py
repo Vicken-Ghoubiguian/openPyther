@@ -35,7 +35,7 @@ class Time:
 
         return self.__sunsetAsTimestampAccordingTheirTimezone
 
-    #
+    # Definition of the __str__ method to display the current object as a string...
     def __str__(self):
         
         return ""

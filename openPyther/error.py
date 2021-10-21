@@ -17,7 +17,7 @@ class Error:
 
         return self.__message
 
-    #
+    # Definition of the __str__ method to display the current object as a string...
     def __str__(self):
         
         return "{}: {}".format(str(self.__cod), str(self.__message))

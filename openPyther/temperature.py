@@ -143,7 +143,7 @@ class Temperature:
 			#
 			print("\nTemperature already in Fahrenheit (°F)\n")
 	
-	#
+	# Definition of the __str__ method to display the current object as a string...
 	def __str__(self):
 
 		return "{} {} ({})".format(str(self.__value), str(self.__getSymbolUnit()), str(self.__getMeasureUnitAsString()))

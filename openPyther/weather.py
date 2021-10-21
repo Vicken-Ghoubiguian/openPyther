@@ -29,7 +29,7 @@ class Weather:
 
 		return self.__iconUrl
 
-	#
+	# Definition of the __str__ method to display the current object as a string...
 	def __str__(self):
 
 		return "[id: {}, main: {}, description: {}, icon URL: {}]".format(str(self.__id), str(self.__main), str(self.__description), str(self.__iconUrl))

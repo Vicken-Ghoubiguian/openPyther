@@ -55,7 +55,7 @@ class Pressure:
 
 		return self.__measureUnitSymbol
 
-	#
+	# Definition of the __str__ method to display the current object as a string...
 	def __str__(self):
 
 		return "{} ".format(str(self.__value))
