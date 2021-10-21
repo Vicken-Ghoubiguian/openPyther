@@ -7,25 +7,25 @@ class UV:
 	# Definition of the UV class constructor...
 	def __init__(self, value):
 
-		self.__index = value
+		self.__index = 0
 
 		#
-		if value <= 2:
+		if self.__index <= 2:
 
 			determiedUVRisk = UVRiskEnum.LOW
 
 		#
-		elif 3 <= value and value <= 5:
+		elif 3 <= self.__index and self.__index <= 5:
 
 			determiedUVRisk = UVRiskEnum.MODERATE
 
 		#
-		elif 6 <= value and value <= 7:
+		elif 6 <= self.__index and self.__index <= 7:
 		
 			determiedUVRisk = UVRiskEnum.HIGH
 
 		#
-		elif 8 <= value and value <= 10:
+		elif 8 <= self.__index and self.__index <= 10:
 
 			determiedUVRisk = UVRiskEnum.VERY_HIGH
 
