@@ -5,7 +5,7 @@ from . import UVRiskEnum
 class UV:
 
 	# Definition of the UV class constructor...
-	def __init__(self, value):
+	def __init__(self, longitude, latitude):
 
 		self.__index = 0
 
