@@ -7,12 +7,12 @@ class Coordinates:
 		self.__longitude = longitude
 		self.__latitude = latitude
 
-	#
+	# Definition of the longitude's getter...
 	def getLongitude(self):
 
 		return self.__longitude
 
-	#
+	# Definition of the latitude's getter...
 	def getLatitude(self):
 
 		return self.__latitude
