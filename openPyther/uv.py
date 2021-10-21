@@ -37,12 +37,12 @@ class UV:
 		#
 		self.__risk = determiedUVRisk
 
-	#
+	# Definition of the index's getter...
 	def getIndex(self):
 
 		return self.__index
 
-	#
+	# Definition of the risk's getter...
 	def getRisk(self):
 
 		return self.__getRiskAsString()
