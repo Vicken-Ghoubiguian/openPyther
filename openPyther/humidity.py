@@ -19,6 +19,5 @@ class Humidity:
 
 	# Definition of the __str__ method to display the current object as a string...
 	def __str__(self):
-
-		#return self.__value + " " + self.__unitOfMeasure
+		
 		return "{} {}".format(str(self.__value), str(self.__unitOfMeasure))
