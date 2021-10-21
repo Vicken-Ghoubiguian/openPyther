@@ -7,7 +7,7 @@ class Wind:
 		self.__speed = speed
 		self.__deg = deg
 
-	#
+	# D
 	def getSpeed(self):
 
 		return self.__speed
