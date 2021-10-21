@@ -20,38 +20,38 @@ class Temperature:
 
 		return self.__measureUnit
 
-	#
+	# Definition of a class method which returns the unit of measure's symbol as a string...
 	def __getSymbolUnit(self):
 
-		#
+		# In the case where the current unit is Kelvin...
 		if self.__measureUnit == temperatureEnum.TemperatureEnum.KELVIN:
 
 			return "K"
 
-		#
+		# In the case where the current unit is Celsius...
 		elif self.__measureUnit == temperatureEnum.TemperatureEnum.CELSIUS:
 
 			return "°C"
 
-		#
+		# In the case where the current unit is Fahrenheit...
 		else:
 
 			return "°F"
 
-	#
+	# Definition of a class method which returns the unit of measure as a string...
 	def __getMeasureUnitAsString(self):
 
-		#
+		# In the case where the current unit is Kelvin...
 		if self.__measureUnit == temperatureEnum.TemperatureEnum.KELVIN:
 
 			return "Kelvin"
 
-		#
+		# In the case where the current unit is Celsius...
 		elif self.__measureUnit == temperatureEnum.TemperatureEnum.CELSIUS:
 
 			return "Celsius"
 
-		#
+		# In the case where the current unit is Fahrenheit... 
 		else:
 
 			return "Fahrenheit"
@@ -65,7 +65,7 @@ class Temperature:
 			# Calculus of conversion from Celsius to Kelvin...
 			self.__value = self.__value + 273.15
 			self.__measureUnit = temperatureEnum.TemperatureEnum.KELVIN
-			
+
 			print("\nTemperature converted from Celsius (°C) to Kelvin (K)\n")
 
 		# In the case where the current unit is Fahrenheit...
