@@ -9,7 +9,7 @@ class Pressure:
 
 		self.__value = value
 		self.__measureUnit = pressureEnum.PressureEnum.HECTOPASCAL
-		self.__measureUnitSymbol = "hPa"
+		#self.__measureUnitSymbol = "hPa"
 
 	#
 	def setPressureAsHectoPascal(self):
@@ -51,9 +51,9 @@ class Pressure:
 		return self.__measureUnit
 
 	#
-	def getSymbolUnit(self):
+	#def getSymbolUnit(self):
 
-		return self.__measureUnitSymbol
+		#return self.__measureUnitSymbol
 
 	# Definition of the __str__ method to display the current object as a string...
 	def __str__(self):
