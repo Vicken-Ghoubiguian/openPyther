@@ -187,6 +187,7 @@ class OpenPyther:
 							"\033[4m" + "Pressure" + ":\033[0m " + str(self.__pressure) + "\n" + \
 							"\033[4m" + "Humidity" + ":\033[0m " + str(self.__humidity) + "\n" + \
 							"\033[4m" + "Wind" + ":\033[0m " + str(self.__wind) + "\n" + \
+							"\033[4m" + "UV" + ":\033[0m " + str(self.__uv) + "\n" + \
 							"\033[4m" + "Sunrise time" + ":\033[0m " + str(self.__time.getSunriseAsTimestampAccordingTheirTimezone()) + "\n" + \
 							"\033[4m" + "Sunset time" + ":\033[0m " + str(self.__time.getSunsetAsTimestampAccordingTheirTimezone()) + "\n"
 

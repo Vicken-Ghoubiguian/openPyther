@@ -16,22 +16,21 @@ class UV:
 		self.__index = 0
 
 		#
-		uvResponse = requests.get("https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=-49.35&lon=70.2167", None)
+		uvResponse = requests.get("https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + str(lat) + "&lon=" + str(lon) + "", None)
 
 		print(uvResponse.text)
 
 		#
-		#uvResponse_datas = json.loads(uvResponse.text)
+		uvResponse_datas = json.loads(uvResponse.text)
 
 		#
-		#self.__index = uvResponse_datas["value"]
-		self.__index = 0
+		self.__index = uvResponse_datas["value"]
 
 		#
-		#self.__dateAsTimestamp = uvResponse_datas["date"]
+		self.__dateAsTimestamp = uvResponse_datas["date"]
 
 		#
-		#self.__dateISO = uvResponse_datas["date_iso"]
+		self.__dateISO = uvResponse_datas["date_iso"]
 
 		#
 		if self.__index <= 2:
