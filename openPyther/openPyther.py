@@ -163,7 +163,7 @@ class OpenPyther:
 	#
 	def getUV(self):
 
-		print("getUltraViolet function...")
+		return self.__uv
 
 	#
 	def getError(self):
