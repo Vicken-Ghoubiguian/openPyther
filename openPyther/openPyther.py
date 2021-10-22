@@ -76,6 +76,11 @@ class OpenPyther:
 				self.__geographicLocation = GeographicLocation(countryCode = weatherResponse_datas["sys"]["country"], localisationName = weatherResponse_datas["name"], utcOffsetAsTimestamp = weatherResponse_datas["timezone"])
 
 				"""
+				
+				"""
+				self.__uv = UV(lon = weatherResponse_datas["coord"]["lon"], lat = weatherResponse_datas["coord"]["lat"])
+
+				"""
 				Treatments for sunrise and sunset times...
 				"""
 				self.__time = Time(sunriseAsTimestampAccordingToUtc = weatherResponse_datas["sys"]["sunrise"], sunsetAsTimestampAccordingToUtc = weatherResponse_datas["sys"]["sunset"], utcOffsetAsTimestamp = weatherResponse_datas["timezone"])
