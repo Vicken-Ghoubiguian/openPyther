@@ -76,7 +76,7 @@ class OpenPyther:
 				self.__geographicLocation = GeographicLocation(countryCode = weatherResponse_datas["sys"]["country"], localisationName = weatherResponse_datas["name"], utcOffsetAsTimestamp = weatherResponse_datas["timezone"])
 
 				"""
-				
+				Initialisation for UV...
 				"""
 				self.__uv = UV(lon = weatherResponse_datas["coord"]["lon"], lat = weatherResponse_datas["coord"]["lat"])
 
