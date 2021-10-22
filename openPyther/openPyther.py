@@ -78,7 +78,7 @@ class OpenPyther:
 				"""
 				Initialisation for UV...
 				"""
-				self.__uv = UV(lon = weatherResponse_datas["coord"]["lon"], lat = weatherResponse_datas["coord"]["lat"])
+				self.__uv = UV(APIKey = APIKey, lat = weatherResponse_datas["coord"]["lat"], lon = weatherResponse_datas["coord"]["lon"])
 
 				"""
 				Treatments for sunrise and sunset times...

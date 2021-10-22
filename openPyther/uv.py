@@ -11,12 +11,12 @@ import json
 class UV:
 
 	# Definition of the UV class constructor...
-	def __init__(self, apiKey, lat, lon):
+	def __init__(self, APIKey, lat, lon):
 
 		self.__index = 0
 
 		#
-		uvResponse = requests.post("https://api.openweathermap.org/data/2.5/uvi?appid=" + apiKey + "&lat=" + lat + "&lon=" + lon + "", None)
+		uvResponse = requests.post("https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon + "", None)
 
 		#
 		if self.__index <= 2:
