@@ -68,12 +68,12 @@ class UV:
 
 		return self.__getRiskAsString()
 
-	#
+	# Definition of the date as timestamp's getter...
 	def getDateAsTimestamp(self):
 
 		return self.__dateAsTimestamp
 
-	#
+	# Definition of the ISO date's getter...
 	def getDateISO(self):
 
 		return self.__dateISO
