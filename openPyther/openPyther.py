@@ -26,7 +26,7 @@ class OpenPyther:
 		try:
 
 			#
-			weatherResponse = requests.post("https://api.openweathermap.org/data/2.5/weather?q=" + city + "," + countryCode + "&appid=" + APIKey + "", None)
+			weatherResponse = requests.get("https://api.openweathermap.org/data/2.5/weather?q=" + city + "," + countryCode + "&appid=" + APIKey + "", None)
 
 			#
 			weatherResponse_datas = json.loads(weatherResponse.text)
