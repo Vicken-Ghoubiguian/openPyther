@@ -18,8 +18,6 @@ class UV:
 		#
 		uvResponse = requests.get("https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + str(lat) + "&lon=" + str(lon) + "", None)
 
-		#print(uvResponse.text)
-
 		#
 		uvResponse_datas = json.loads(uvResponse.text)
 
@@ -71,8 +69,14 @@ class UV:
 		return self.__getRiskAsString()
 
 	#
+	def getDateAsTimestamp(self):
+
+		return self.__dateAsTimestamp
 
 	#
+	def getDateISO(self):
+
+		return self.__dateISO
 
 	#
 	def __getRiskAsString(self):
