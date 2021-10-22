@@ -19,6 +19,18 @@ class UV:
 		uvResponse = requests.post("https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon + "", None)
 
 		#
+		uvResponse_datas = json.loads(uvResponse.text)
+
+		#
+		self.__index = uvResponse_datas["value"]
+
+		#
+		self.__dateAsTimestamp = uvResponse_datas["date"]
+
+		#
+		self.__dateISO = uvResponse_datas["date_iso"]
+
+		#
 		if self.__index <= 2:
 
 			determiedUVRisk = UVRiskEnum.LOW
