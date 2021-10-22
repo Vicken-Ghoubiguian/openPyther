@@ -18,7 +18,7 @@ class UV:
 		#
 		uvResponse = requests.get("https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + str(lat) + "&lon=" + str(lon) + "", None)
 
-		print(uvResponse.text)
+		#print(uvResponse.text)
 
 		#
 		uvResponse_datas = json.loads(uvResponse.text)
@@ -69,6 +69,10 @@ class UV:
 	def getRisk(self):
 
 		return self.__getRiskAsString()
+
+	#
+
+	#
 
 	#
 	def __getRiskAsString(self):
