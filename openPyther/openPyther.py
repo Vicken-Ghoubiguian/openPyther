@@ -161,7 +161,7 @@ class OpenPyther:
 		return self.__time
 
 	#
-	def getUltraViolet(self):
+	def getUV(self):
 
 		print("getUltraViolet function...")
 
