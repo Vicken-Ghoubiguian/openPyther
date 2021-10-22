@@ -1,13 +1,22 @@
 #
 from . import UVRiskEnum
 
+# Import the installed-from-PyPi module named "requests" to elaborate and execute HTTP/HTTPS requests...
+import requests
+
+# Import the module named "json" to jsonify, dejsonify and treat JSON datas and strings...
+import json
+
 # Definition of the UV class...
 class UV:
 
 	# Definition of the UV class constructor...
-	def __init__(self, lon, lat):
+	def __init__(self, apiKey, lat, lon):
 
 		self.__index = 0
+
+		#
+		uvResponse = requests.post("https://api.openweathermap.org/data/2.5/uvi?appid=" + apiKey + "&lat=" + lat + "&lon=" + lon + "", None)
 
 		#
 		if self.__index <= 2:
