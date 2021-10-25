@@ -20,4 +20,4 @@ class Wind:
 	# Definition of the __str__ method to display the current object as a string...
 	def __str__(self):
 
-		return ""
+		return self.__speed + " meter/second (m/s) - " + self.__deg
