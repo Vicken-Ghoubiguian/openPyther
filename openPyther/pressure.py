@@ -4,7 +4,7 @@ from . import pressureEnum
 # Definition of the Pressure class...
 class Pressure:
 
-	#
+	# Definition of the Pressure class constructor...
 	def __init__(self, value):
 
 		self.__value = value
