@@ -15,7 +15,7 @@ class Time:
         self.__sunriseAsTimestampAccordingTheirTimezone = self.__sunriseAsTimestampAccordingToUtc + self.__utcOffsetAsTimestamp
         self.__sunsetAsTimestampAccordingTheirTimezone = self.__sunsetAsTimestampAccordingToUtc + self.__utcOffsetAsTimestamp
 
-    #
+    # D
     def getSunriseAsTimestampAccordingToUtc(self):
 
         return self.__sunriseAsTimestampAccordingToUtc
