@@ -7,12 +7,12 @@ class Wind:
 		self.__speed = speed
 		self.__deg = deg
 
-	# D
+	# Definition of the wind speed's getter...
 	def getSpeed(self):
 
 		return self.__speed
 
-	#
+	# Definition of the wind deg's getter...
 	def getDeg(self):
 
 		return self.__deg

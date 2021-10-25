@@ -100,72 +100,72 @@ class OpenPyther:
 			#
 			#self.__error = ""
 
-	#
+	# Definition of the code's getter...
 	def getCod(self):
 
 		return self.__cod
 
-	#
+	# Definition of the coordinates' getter...
 	def getCoords(self):
 
 		return self.__coordinates
 
-	#
+	# Definition of the weather's getter...
 	def getWeather(self):
 
 		return self.__weather
 
-	#
+	# Definition of the current temperature's getter...
 	def getTemperature(self):
 
 		return self.__temperature
 
-	#
+	# Definition of the feeling like temperature's getter...
 	def getFeelingLikeTemperature(self):
 
 		return self.__feeling_like_temperature
 
-	#
+	# Definition of the expected minimum temperature's getter...
 	def getMinTemperature(self):
 
 		return self.__minimum_temperature
 
-	#
+	# Definition of the expected maximum temperature's getter...
 	def getMaxTemperature(self):
 
 		return self.__maximum_temperature
 
-	#
+	# Definition of the pressure's getter...
 	def getPressure(self):
 
 		return self.__pressure
 
-	#
+	# Definition of the humidity's getter...
 	def getHumidity(self):
 
 		return self.__humidity
 
-	#
+	# Definition of the wind's getter...
 	def getWind(self):
 
 		return self.__wind
 
-	#
+	# Definition of the geographic location's getter...
 	def getGeographicLocation(self):
 
 		return self.__geographicLocation
 
-	#
+	# Definition of the time's getter...
 	def getTime(self):
 
 		return self.__time
 
-	#
+	# Definition of the UV (UltraViolet)'s getter...
 	def getUV(self):
 
 		return self.__uv
 
-	#
+	# Definition of the expected maximum temperature's getter...
 	def getError(self):
 
 		return self.__error
