@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(name='openPyther',
 version='0.1',
-description='Python package to get, treat and return weather from the OpenWeatherMap's API',
+description="Python package to get, treat and return weather from the OpenWeatherMap's API",
 long_description=readme_description,
 long_description_content_type="text/markdown",
 url='#',
