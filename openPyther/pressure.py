@@ -82,7 +82,40 @@ class Pressure:
 
 				return "psi"
 
+	#
+	def __getMeasureUnitAsString(self):
+
+			#
+			if self.__measureUnit == pressureEnum.PressureEnum.HECTOPASCAL:
+
+				return "hectoPascal"
+
+			#
+			elif self.__measureUnit == pressureEnum.PressureEnum.PASCAL:
+
+				return "Pascal"
+
+			#
+			elif self.__measureUnit == pressureEnum.PressureEnum.BAR:
+
+				return "Bar"
+
+			#
+			elif self.__measureUnit == pressureEnum.PressureEnum.ATMOSPHERE:
+
+				return "Atmosphere"
+
+			#
+			elif self.__measureUnit == pressureEnum.PressureEnum.TORR:
+
+				return "Torr"
+
+			#
+			else:
+
+				return "Pound per square inch"
+
 	# Definition of the __str__ method to display the current object as a string...
 	def __str__(self):
 
-		return "{} {} ()".format(str(self.__value), str(self.__getSymbolUnit()))
+		return "{} {} ({})".format(str(self.__value), str(self.__getSymbolUnit()), str(self.__getMeasureUnitAsString()))
