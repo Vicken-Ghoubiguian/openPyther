@@ -38,4 +38,4 @@ class Time:
     # Definition of the __str__ method to display the current object as a string...
     def __str__(self):
         
-        return "([Sunrise time - according their timezone: ({}), Sunset time - according their timezone: ({})]; [])".format(str(self.__sunriseAsTimestampAccordingTheirTimezone), str(self.__sunsetAsTimestampAccordingTheirTimezone))
+        return "([Sunrise time according their timezone: ({}), Sunset time according their timezone: ({})]; [Sunrise time according UTC: ({}), Sunset time according UTC: ({})])".format(str(self.__sunriseAsTimestampAccordingTheirTimezone), str(self.__sunsetAsTimestampAccordingTheirTimezone), str(self.__sunriseAsTimestampAccordingToUtc), str(self.__sunsetAsTimestampAccordingToUtc))
