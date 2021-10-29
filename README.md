@@ -20,6 +20,8 @@ PyPi package to get, treat and return weather from the OpenWeatherMap's API. Mor
 <a name="introduction"></a>
 ## Introduction
 
+Coming soon...
+
 <a name="presentation"></a>
 ## Presentation
 
