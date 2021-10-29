@@ -49,7 +49,7 @@ class Pressure:
 
 		return self.__measureUnit
 
-	#
+	# Definition of a class method which returns the unit of measure's symbol as a string...
 	def __getSymbolUnit(self):
 
 			#
@@ -82,35 +82,35 @@ class Pressure:
 
 				return "psi"
 
-	#
+	# Definition of a class method which returns the unit of measure as a string...
 	def __getMeasureUnitAsString(self):
 
-			#
+			# In the case where the current unit is hectoPascal...
 			if self.__measureUnit == pressureEnum.PressureEnum.HECTOPASCAL:
 
 				return "hectoPascal"
 
-			#
+			# In the case where the current unit is Pascal...
 			elif self.__measureUnit == pressureEnum.PressureEnum.PASCAL:
 
 				return "Pascal"
 
-			#
+			# In the case where the current unit is Bar...
 			elif self.__measureUnit == pressureEnum.PressureEnum.BAR:
 
 				return "Bar"
 
-			#
+			# In the case where the current unit is Atmosphere...
 			elif self.__measureUnit == pressureEnum.PressureEnum.ATMOSPHERE:
 
 				return "Atmosphere"
 
-			#
+			# In the case where the current unit is Torr...
 			elif self.__measureUnit == pressureEnum.PressureEnum.TORR:
 
 				return "Torr"
 
-			#
+			# In the case where the current unit is Pound per square inch...
 			else:
 
 				return "Pound per square inch"
