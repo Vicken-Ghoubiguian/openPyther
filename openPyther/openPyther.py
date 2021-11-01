@@ -89,21 +89,15 @@ class OpenPyther:
 			else:
 
 				"""
-				Initialisation for OpenWeather error...
+				...
 				"""
-				self.__openWeatherError = OpenWeatherError(self.__cod, weatherResponse_datas["message"])
+				raise OpenWeatherError(self.__cod, weatherResponse_datas["message"])
 
 		#
 		except ConnectionError as occuredError:
 
 			#
 			print(occuredError)
-
-			#
-			#self.__cod = occuredError.errno
-
-			#
-			#self.__openWeatherError = Error(occuredError.errno, occuredError.message)
 
 	# Definition of the code's getter...
 	def getCod(self):
@@ -170,19 +164,11 @@ class OpenPyther:
 
 		return self.__uv
 
-	# Definition of the expected maximum temperature's getter...
-	def getOpenWeatherError(self):
-
-		return self.__openWeatherError
-
 	# Definition of the __str__ method to display the current object as a string...
 	def __str__(self):
 
 		#
-		if self.__cod == 200:
-
-			#
-			return "\n" + 	"\033[4m" + "Coordinates" + ":\033[0m " + str(self.__coordinates) + "\n" + \
+		return "\n" + 	"\033[4m" + "Coordinates" + ":\033[0m " + str(self.__coordinates) + "\n" + \
 							"\033[4m" + "Weather" + ":\033[0m " + str(self.__weather) + "\n" + \
 							"\033[4m" + "Geographic location" + ":\033[0m " + str(self.__geographicLocation) + "\n" + \
 							"\033[4m" + "Temperature" + ":\033[0m " + str(self.__temperature) + "\n" + \
@@ -194,9 +180,3 @@ class OpenPyther:
 							"\033[4m" + "Wind" + ":\033[0m " + str(self.__wind) + "\n" + \
 							"\033[4m" + "UV" + ":\033[0m " + str(self.__uv) + "\n" + \
 							"\033[4m" + "Time" + ":\033[0m " + str(self.__time) + "\n"
-
-		#
-		else:
-
-			#
-			return "\n" + "\033[0;31m" + str(self.__openWeatherError) + "\033[0m" + "\n"
