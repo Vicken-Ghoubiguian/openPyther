@@ -100,10 +100,10 @@ class OpenPyther:
 			print(e)
 
 			#
-			#self.__cod = 
+			#self.__cod = e.errno
 
 			#
-			#self.__error = Error(, e.message)
+			#self.__error = Error(e.errno, e.message)
 
 	# Definition of the code's getter...
 	def getCod(self):
