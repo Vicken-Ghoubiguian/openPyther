@@ -89,7 +89,7 @@ class OpenPyther:
 			else:
 
 				"""
-				...
+				Initialisation of the OpenWeatherError error and raise it...
 				"""
 				raise OpenWeatherError(self.__cod, weatherResponse_datas["message"])
 
