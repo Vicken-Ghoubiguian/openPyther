@@ -100,7 +100,10 @@ class OpenPyther:
 			print(e)
 
 			#
-			#self.__error = ""
+			#self.__cod = 
+
+			#
+			#self.__error = Error(, e.message)
 
 	# Definition of the code's getter...
 	def getCod(self):
