@@ -94,16 +94,16 @@ class OpenPyther:
 				self.__error = Error(self.__cod, weatherResponse_datas["message"])
 
 		#
-		except ConnectionError as e:
+		except ConnectionError as occuredError:
 
 			#
-			print(e)
+			print(occuredError)
 
 			#
-			#self.__cod = e.errno
+			#self.__cod = occuredError.errno
 
 			#
-			#self.__error = Error(e.errno, e.message)
+			#self.__error = Error(occuredError.errno, occuredError.message)
 
 	# Definition of the code's getter...
 	def getCod(self):
