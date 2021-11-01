@@ -34,7 +34,7 @@ class OpenPyther:
 			# Definition of the 'Cod' attribute (which correspond to the previous HTTP/HTTPS response's cod)...
 			self.__cod = weatherResponse_datas["cod"]
 
-			#
+			# In the case where the HTTPS request is successed (when the response's code is equal to 200)...
 			if self.__cod == 200:
 
 				"""
@@ -85,7 +85,7 @@ class OpenPyther:
 				"""
 				self.__time = Time(sunriseAsTimestampAccordingToUtc = weatherResponse_datas["sys"]["sunrise"], sunsetAsTimestampAccordingToUtc = weatherResponse_datas["sys"]["sunset"], utcOffsetAsTimestamp = weatherResponse_datas["timezone"])
 
-			#
+			# In the other case (when the response's code is not equal to 200 - when an OpenWeather error occured)...
 			else:
 
 				"""
