@@ -39,12 +39,12 @@ class Pressure:
 
 		print("Conversion in Pounds Per Square Inch...")
 
-	#
+	# Definition of the value's getter...
 	def getValue(self):
 
 		return self.__value
 
-	#
+	# Definition of the measure unit's getter...
 	def getMeasureUnit(self):
 
 		return self.__measureUnit
