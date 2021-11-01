@@ -8,7 +8,7 @@ from . import UV
 from . import Time
 from . import Weather
 from . import Wind
-from . import Error
+from . import OpenWeatherError
 
 # Import the installed-from-PyPi module named "requests" to elaborate and execute HTTP/HTTPS requests...
 import requests
@@ -91,7 +91,7 @@ class OpenPyther:
 				"""
 				Initialisation for OpenWeather error...
 				"""
-				self.__error = Error(self.__cod, weatherResponse_datas["message"])
+				self.__openWeatherError = OpenWeatherError(self.__cod, weatherResponse_datas["message"])
 
 		#
 		except ConnectionError as occuredError:
@@ -103,7 +103,7 @@ class OpenPyther:
 			#self.__cod = occuredError.errno
 
 			#
-			#self.__error = Error(occuredError.errno, occuredError.message)
+			#self.__openWeatherError = Error(occuredError.errno, occuredError.message)
 
 	# Definition of the code's getter...
 	def getCod(self):
@@ -171,9 +171,9 @@ class OpenPyther:
 		return self.__uv
 
 	# Definition of the expected maximum temperature's getter...
-	def getError(self):
+	def getOpenWeatherError(self):
 
-		return self.__error
+		return self.__openWeatherError
 
 	# Definition of the __str__ method to display the current object as a string...
 	def __str__(self):
@@ -199,4 +199,4 @@ class OpenPyther:
 		else:
 
 			#
-			return "\n" + "\033[0;31m" + str(self.__error) + "\033[0m" + "\n"
+			return "\n" + "\033[0;31m" + str(self.__openWeatherError) + "\033[0m" + "\n"

@@ -10,5 +10,5 @@ from .uv import *
 from .time import *
 from .weather import *
 from .wind import *
-from .error import *
+from .openWeatherError import *
 from .openPyther import *

@@ -1,5 +1,5 @@
 # Definition of the Error class...
-class Error:
+class OpenWeatherError(Exception):
 
     # Definition of the Error class constructor...
     def __init__(self, code, message):
