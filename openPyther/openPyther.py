@@ -96,8 +96,10 @@ class OpenPyther:
 		#
 		except ConnectionError as occuredError:
 
-			#
-			print(occuredError)
+			"""
+			Raise the occured error named "occuredError"...
+			"""
+			raise occuredError
 
 	# Definition of the code's getter...
 	def getCod(self):
