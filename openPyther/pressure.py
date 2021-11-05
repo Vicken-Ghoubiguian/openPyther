@@ -23,7 +23,7 @@ class Pressure:
 
 			print("\nPressure converted from Bar (bar) to hectoPascal (hPa)\n")
 
-		#
+		# In the case where the current unit is Atmosphere...
 		elif self.__measureUnit == pressureEnum.PressureEnum.ATMOSPHERE:
 
 			print("\nPressure converted from Atmosphere (atm) to hectoPascal (hPa)\n")
@@ -56,7 +56,7 @@ class Pressure:
 
 			print("\nPressure converted from Bar (bar) to Pascal (Pa)\n")
 
-		#
+		# In the case where the current unit is Atmosphere...
 		elif self.__measureUnit == pressureEnum.PressureEnum.ATMOSPHERE:
 
 			print("\nPressure converted from Atmosphere (atm) to Pascal (Pa)\n")
@@ -89,7 +89,7 @@ class Pressure:
 
 			print("\nPressure converted from Pascal (pa) to Bar (bar)\n")
 
-		#
+		# In the case where the current unit is Atmosphere...
 		elif self.__measureUnit == pressureEnum.PressureEnum.ATMOSPHERE:
 
 			print("\nPressure converted from Atmosphere (atm) to Bar (bar)\n")
@@ -137,7 +137,7 @@ class Pressure:
 
 			print("\nPressure converted from Pounds Per Square Inch (psi) to Atmosphere (atm)\n")
 
-		#
+		# In the case where the current unit is Atmosphere...
 		else:
 
 			print("\nPressure already in Atmosphere (atm)\n")
@@ -156,7 +156,7 @@ class Pressure:
 
 			print("\nPressure converted from Bar (bar) to to Torr (torr)\n")
 
-		#
+		# In the case where the current unit is Atmosphere...
 		elif self.__measureUnit == pressureEnum.PressureEnum.ATMOSPHERE:
 
 			print("\nPressure converted from Atmosphere (atm) to Torr (torr)\n")
@@ -194,7 +194,7 @@ class Pressure:
 
 			print("\nPressure converted from Bar (bar) to Pounds Per Square Inch (psi)\n")
 
-		#
+		# In the case where the current unit is Atmosphere...
 		elif self.__measureUnit == pressureEnum.PressureEnum.ATMOSPHERE:
 
 			print("\nPressure converted from Atmosphere (atm) to Pounds Per Square Inch (psi)\n")
@@ -237,7 +237,7 @@ class Pressure:
 
 				return "bar"
 
-			#
+			# In the case where the current unit is Atmosphere...
 			elif self.__measureUnit == pressureEnum.PressureEnum.ATMOSPHERE:
 
 				return "atm"
