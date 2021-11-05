@@ -10,7 +10,7 @@ class Pressure:
 		self.__value = value
 		self.__measureUnit = pressureEnum.PressureEnum.HECTOPASCAL
 
-	#
+	# Definition of the hectoPascal's converter...
 	def setPressureAsHectoPascal(self):
 
 		#
@@ -43,7 +43,7 @@ class Pressure:
 
 			print("\nPressure already in hectoPascal (hPa)\n")
 
-	#
+	# Definition of the Pascal's converter...
 	def setPressureAsPascal(self):
 
 		#
@@ -76,7 +76,7 @@ class Pressure:
 
 			print("\nPressure already in Pascal (Pa)\n")
 
-	#
+	# Definition of the Bar's converter...
 	def setPressureAsBar(self):
 
 		#
@@ -109,7 +109,7 @@ class Pressure:
 
 			print("\nPressure already in Bar (bar)\n")
 
-	#
+	# Definition of the Atmosphere's converter...
 	def setPressureAsAtmosphere(self):
 
 		#
@@ -143,7 +143,7 @@ class Pressure:
 			print("\nPressure already in Atmosphere (atm)\n")
 
 
-	#
+	# Definition of the Torr's converter...
 	def setPressureAsTorr(self):
 
 		#
@@ -176,7 +176,7 @@ class Pressure:
 
 			print("\nPressure already in Toor (torr)\n")
 
-	#
+	# Definition of the Pounds per square inch's converter...
 	def setPressureAsPoundsPerSquareInch(self):
 
 		#
