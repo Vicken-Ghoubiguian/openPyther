@@ -112,7 +112,36 @@ class Pressure:
 	#
 	def setPressureAsAtmosphere(self):
 
-		print("Conversion in Atmosphere...")
+		#
+		if self.__measureUnit == pressureEnum.PressureEnum.HECTOPASCAL:
+
+			print("\nPressure converted from hectoPascal (hPa) to Bar (bar)\n")
+
+		#
+		elif self.__measureUnit == pressureEnum.PressureEnum.PASCAL:
+
+			print("\nPressure converted from Pascal (pa) to Atmosphere (atm)\n")
+
+		#
+		elif self.__measureUnit == pressureEnum.PressureEnum.BAR:
+
+			print("\nPressure converted from Bar (bar) to Atmosphere (atm)\n")
+
+		#
+		elif self.__measureUnit == pressureEnum.PressureEnum.TORR:
+
+			print("\nPressure converted from Torr (torr) to Atmosphere (atm)\n")
+
+		#
+		elif self.__measureUnit == pressureEnum.PressureEnum.POUNDSPERSQUAREINCH:
+
+			print("\nPressure converted from Pounds Per Square Inch (psi) to Atmosphere (atm)\n")
+
+		#
+		else:
+
+			print("\nPressure already in Atmosphere (atm)\n")
+
 
 	#
 	def setPressureAsTorr(self):
