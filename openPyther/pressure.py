@@ -13,7 +13,7 @@ class Pressure:
 	# Definition of the hectoPascal's converter...
 	def setPressureAsHectoPascal(self):
 
-		#
+		# In the case where the current unit is Pascal...
 		if self.__measureUnit == pressureEnum.PressureEnum.PASCAL:
 
 			print("\nPressure converted from Pascal (Pa) to hectoPascal (hPa)\n")
@@ -71,7 +71,7 @@ class Pressure:
 
 			print("\nPressure converted from Pounds Per Square Inch (psi) to Pascal (Pa)\n")
 
-		#
+		# In the case where the current unit is Pascal...
 		else:
 
 			print("\nPressure already in Pascal (Pa)\n")
@@ -84,7 +84,7 @@ class Pressure:
 
 			print("\nPressure converted from hectoPascal (hPa) to Bar (bar)\n")
 
-		#
+		# In the case where the current unit is Pascal...
 		elif self.__measureUnit == pressureEnum.PressureEnum.PASCAL:
 
 			print("\nPressure converted from Pascal (pa) to Bar (bar)\n")
@@ -117,7 +117,7 @@ class Pressure:
 
 			print("\nPressure converted from hectoPascal (hPa) to Bar (bar)\n")
 
-		#
+		# In the case where the current unit is Pascal...
 		elif self.__measureUnit == pressureEnum.PressureEnum.PASCAL:
 
 			print("\nPressure converted from Pascal (pa) to Atmosphere (atm)\n")
@@ -146,7 +146,7 @@ class Pressure:
 	# Definition of the Torr's converter...
 	def setPressureAsTorr(self):
 
-		#
+		# In the case where the current unit is Pascal...
 		if self.__measureUnit == pressureEnum.PressureEnum.PASCAL:
 
 			print("\nPressure converted from Pascal (Pa) to to Torr (torr)\n")
@@ -184,7 +184,7 @@ class Pressure:
 
 			print("\nPressure converted from hectoPascal (hPa) to Pounds Per Square Inch (psi)\n")
 
-		#
+		# In the case where the current unit is Pascal...
 		elif self.__measureUnit == pressureEnum.PressureEnum.PASCAL:
 
 			print("\nPressure converted from Pascal (Pa) to Pounds Per Square Inch (psi)\n")
