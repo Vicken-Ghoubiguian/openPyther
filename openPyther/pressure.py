@@ -28,7 +28,7 @@ class Pressure:
 
 			print("\nPressure converted from Atmosphere (atm) to hectoPascal (hPa)\n")
 
-		#
+		# In the case where the current unit is Torr...
 		elif self.__measureUnit == pressureEnum.PressureEnum.TORR:
 
 			print("\nPressure converted from Torr (torr) to hectoPascal (hPa)\n")
@@ -61,7 +61,7 @@ class Pressure:
 
 			print("\nPressure converted from Atmosphere (atm) to Pascal (Pa)\n")
 
-		#
+		# In the case where the current unit is Torr...
 		elif self.__measureUnit == pressureEnum.PressureEnum.TORR:
 
 			print("\nPressure converted from Torr (torr) to Pascal (Pa)\n")
@@ -94,7 +94,7 @@ class Pressure:
 
 			print("\nPressure converted from Atmosphere (atm) to Bar (bar)\n")
 
-		#
+		# In the case where the current unit is Torr...
 		elif self.__measureUnit == pressureEnum.PressureEnum.TORR:
 
 			print("\nPressure converted from Torr (torr) to Bar (bar)\n")
@@ -127,7 +127,7 @@ class Pressure:
 
 			print("\nPressure converted from Bar (bar) to Atmosphere (atm)\n")
 
-		#
+		# In the case where the current unit is Torr...
 		elif self.__measureUnit == pressureEnum.PressureEnum.TORR:
 
 			print("\nPressure converted from Torr (torr) to Atmosphere (atm)\n")
@@ -171,7 +171,7 @@ class Pressure:
 
 			print("\nPressure converted from Pounds Per Square Inch (psi) to Torr (torr)\n")
 
-		#
+		# In the case where the current unit is Torr...
 		else:
 
 			print("\nPressure already in Toor (torr)\n")
@@ -199,7 +199,7 @@ class Pressure:
 
 			print("\nPressure converted from Atmosphere (atm) to Pounds Per Square Inch (psi)\n")
 
-		#
+		# In the case where the current unit is Torr...
 		elif self.__measureUnit == pressureEnum.PressureEnum.TORR:
 
 			print("\nPressure converted from Torr (torr) to Pounds Per Square Inch (psi)\n")
