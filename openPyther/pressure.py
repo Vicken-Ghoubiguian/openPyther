@@ -189,7 +189,7 @@ class Pressure:
 		# In the case where the current unit is Torr...
 		else:
 
-			print("\nPressure already in Toor (torr)\n")
+			print("\nPressure already in Torr (torr)\n")
 
 	# Definition of the Pounds per square inch's converter...
 	def setPressureAsPoundsPerSquareInch(self):
@@ -197,6 +197,7 @@ class Pressure:
 		# In the case where the current unit is hectoPascal...
 		if self.__measureUnit == pressureEnum.PressureEnum.HECTOPASCAL:
 
+			self.__value = self.__value / 68.94757293168
 			self.__measureUnit = pressureEnum.PressureEnum.POUNDSPERSQUAREINCH
 
 			print("\nPressure converted from hectoPascal (hPa) to Pounds Per Square Inch (psi)\n")
@@ -204,6 +205,7 @@ class Pressure:
 		# In the case where the current unit is Pascal...
 		elif self.__measureUnit == pressureEnum.PressureEnum.PASCAL:
 
+			self.__value = self.__value / 6894.757293168
 			self.__measureUnit = pressureEnum.PressureEnum.POUNDSPERSQUAREINCH
 
 			print("\nPressure converted from Pascal (Pa) to Pounds Per Square Inch (psi)\n")
@@ -211,6 +213,7 @@ class Pressure:
 		# In the case where the current unit is Bar...
 		elif self.__measureUnit == pressureEnum.PressureEnum.BAR:
 
+			self.__value = self.__value * 14.503773773022
 			self.__measureUnit = pressureEnum.PressureEnum.POUNDSPERSQUAREINCH
 
 			print("\nPressure converted from Bar (bar) to Pounds Per Square Inch (psi)\n")
@@ -218,6 +221,7 @@ class Pressure:
 		# In the case where the current unit is Atmosphere...
 		elif self.__measureUnit == pressureEnum.PressureEnum.ATMOSPHERE:
 
+			self.__value = self.__value * 14.695964
 			self.__measureUnit = pressureEnum.PressureEnum.POUNDSPERSQUAREINCH
 
 			print("\nPressure converted from Atmosphere (atm) to Pounds Per Square Inch (psi)\n")
@@ -225,6 +229,7 @@ class Pressure:
 		# In the case where the current unit is Torr...
 		elif self.__measureUnit == pressureEnum.PressureEnum.TORR:
 
+			self.__value = self.__value / 51.715
 			self.__measureUnit = pressureEnum.PressureEnum.POUNDSPERSQUAREINCH
 
 			print("\nPressure converted from Torr (torr) to Pounds Per Square Inch (psi)\n")
