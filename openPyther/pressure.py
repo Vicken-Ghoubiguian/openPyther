@@ -64,25 +64,40 @@ class Pressure:
 		# In the case where the current unit is hectoPascal...
 		if self.__measureUnit == pressureEnum.PressureEnum.HECTOPASCAL:
 
+			self.__value = self.__value * 100
+			self.__measureUnit = pressureEnum.PressureEnum.PASCAL
+
 			print("\nPressure converted from hectoPascal (hPa) to Pascal (Pa)\n")
 
 		# In the case where the current unit is Bar...
 		elif self.__measureUnit == pressureEnum.PressureEnum.BAR:
+
+			self.__value = self.__value * 100000
+			self.__measureUnit = pressureEnum.PressureEnum.PASCAL
 
 			print("\nPressure converted from Bar (bar) to Pascal (Pa)\n")
 
 		# In the case where the current unit is Atmosphere...
 		elif self.__measureUnit == pressureEnum.PressureEnum.ATMOSPHERE:
 
+			self.__value = self.__value * 101325
+			self.__measureUnit = pressureEnum.PressureEnum.PASCAL
+
 			print("\nPressure converted from Atmosphere (atm) to Pascal (Pa)\n")
 
 		# In the case where the current unit is Torr...
 		elif self.__measureUnit == pressureEnum.PressureEnum.TORR:
 
+			self.__value = self.__value * 133.3223684211
+			self.__measureUnit = pressureEnum.PressureEnum.PASCAL
+
 			print("\nPressure converted from Torr (torr) to Pascal (Pa)\n")
 
 		# In the case where the current unit is Pounds Per Square Inch...
 		elif self.__measureUnit == pressureEnum.PressureEnum.POUNDSPERSQUAREINCH:
+
+			self.__value = self.__value * 6894.7572931783
+			self.__measureUnit = pressureEnum.PressureEnum.PASCAL
 
 			print("\nPressure converted from Pounds Per Square Inch (psi) to Pascal (Pa)\n")
 
