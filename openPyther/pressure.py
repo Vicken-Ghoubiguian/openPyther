@@ -115,7 +115,7 @@ class Pressure:
 		# In the case where the current unit is hectoPascal...
 		if self.__measureUnit == pressureEnum.PressureEnum.HECTOPASCAL:
 
-			print("\nPressure converted from hectoPascal (hPa) to Bar (bar)\n")
+			print("\nPressure converted from hectoPascal (hPa) to Atmosphere (atm)\n")
 
 		# In the case where the current unit is Pascal...
 		elif self.__measureUnit == pressureEnum.PressureEnum.PASCAL:
