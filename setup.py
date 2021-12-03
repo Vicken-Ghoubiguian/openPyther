@@ -13,6 +13,6 @@ author='Wicken',
 author_email='ericghoubiguian@live.fr',
 license='MIT',
 packages=['openPyther'],
-install_requires=['requests'],
+install_requires=['requests', 'sphinx'],
 zip_safe=False,
 python_requires='>=3.7.2')
