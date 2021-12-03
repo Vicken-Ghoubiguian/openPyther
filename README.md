@@ -14,8 +14,9 @@ PyPi package to get, treat and return weather from the OpenWeatherMap's API. Mor
     * [From GitHub](#from_github)
 7. [How to use it ?](#how_to_use_it)
 8. [A few examples](#a_few_examples)
-9. [Useful links](#useful_links)
-10. [Conclusion](#conclusion)
+    * [Display all of the weather](#display_all_of_the_weather)
+10. [Useful links](#useful_links)
+11. [Conclusion](#conclusion)
 
 <a name="introduction"></a>
 ## Introduction
@@ -55,7 +56,8 @@ Comming...
 <a name="a_few_examples"></a>
 ## A few examples
 
-Display all of the weather...
+<a name="display_all_of_the_weather"></a>
+### Display all of the weather
 
 ```python
 # Import the main module to use: the OpenPyther one...
