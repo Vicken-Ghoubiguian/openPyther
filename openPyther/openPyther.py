@@ -20,13 +20,22 @@ import json
 class OpenPyther:
 
 	# Definition of the first OpenPyther class constructor...
-	def __init__(self, city, countryCode, APIKey):
+	def __init__(self, city, APIKey, countryCode = None):
 
 		#
 		try:
 
 			#
-			weatherResponse = requests.get("https://api.openweathermap.org/data/2.5/weather?q=" + city + "," + countryCode + "&appid=" + APIKey + "", None)
+			if countryCode is None:
+
+				#
+				weatherResponse = requests.get("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey + "", None)
+
+			#
+			else:
+
+				#
+				weatherResponse = requests.get("https://api.openweathermap.org/data/2.5/weather?q=" + city + "," + countryCode + "&appid=" + APIKey + "", None)
 
 			#
 			weatherResponse_datas = json.loads(weatherResponse.text)
