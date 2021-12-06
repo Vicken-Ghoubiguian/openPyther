@@ -95,6 +95,10 @@ import openPyther.openPyther as openPyther
 openPytherObject = openPyther.OpenPyther("<wishedLocalisation>", "<OpenWeather API Key>", "<wishedCountryCode>")
 
 #
+openPytherObject.getTemperature().setTemperatureAsKelvin()
+openPytherObject.getFeelingLikeTemperature().setTemperatureAsKelvin()
+openPytherObject.getMinTemperature().setTemperatureAsKelvin()
+openPytherObject.getMaxTemperature().setTemperatureAsKelvin()
 
 #
 print("Temperature: " + openPytherObject.getTemperature())
