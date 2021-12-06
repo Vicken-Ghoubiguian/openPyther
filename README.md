@@ -88,6 +88,35 @@ print(openPytherObject)
 ### Convert temperatures
 
 ```python
+# Import the main module to use: the OpenPyther one...
+import openPyther.openPyther as openPyther
+
+# Initialization of the 'openPyther' object with the wished localisation, the OpenWeather API key and the wished country code as parameters of the constructor...
+openPytherObject = openPyther.OpenPyther("<wishedLocalisation>", "<OpenWeather API Key>", "<wishedCountryCode>")
+
+#
+
+#
+print("Temperature: ")
+print("Feeling like temperature:")
+print("Minimum expected temperature:")
+print("Maximum expected temperature:")
+
+#
+print("Temperature: ")
+print("Feeling like temperature:")
+print("Minimum expected temperature:")
+print("Maximum expected temperature:")
+
+#
+print("Temperature: ")
+print("Feeling like temperature:")
+print("Minimum expected temperature:")
+print("Maximum expected temperature:")
+
+#
+
+
 ```
 
 <a name="useful_links"></a>
