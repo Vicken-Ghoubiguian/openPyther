@@ -83,6 +83,9 @@ openPytherObject = openPyther.OpenPyther("<wishedLocalisation>", "<OpenWeather A
 print(openPytherObject)
 ```
 
+<a name="convert_temperatures"></a>
+### Convert temperatures
+
 <a name="useful_links"></a>
 ## Useful links
 
