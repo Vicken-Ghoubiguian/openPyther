@@ -97,22 +97,22 @@ openPytherObject = openPyther.OpenPyther("<wishedLocalisation>", "<OpenWeather A
 #
 
 #
-print("Temperature: ")
-print("Feeling like temperature:")
-print("Minimum expected temperature:")
-print("Maximum expected temperature:")
+print("Temperature: " + openPytherObject.getTemperature())
+print("Feeling like temperature: " + openPytherObject.getFeelingLikeTemperature())
+print("Minimum expected temperature: " + openPytherObject.getMinTemperature())
+print("Maximum expected temperature: " + openPytherObject.getMaxTemperature())
 
 #
-print("Temperature: ")
-print("Feeling like temperature:")
-print("Minimum expected temperature:")
-print("Maximum expected temperature:")
+print("Temperature: " + openPytherObject.getTemperature())
+print("Feeling like temperature: " + openPytherObject.getFeelingLikeTemperature())
+print("Minimum expected temperature: " + openPytherObject.getMinTemperature())
+print("Maximum expected temperature: " + openPytherObject.getMaxTemperature())
 
 #
-print("Temperature: ")
-print("Feeling like temperature:")
-print("Minimum expected temperature:")
-print("Maximum expected temperature:")
+print("Temperature: " + openPytherObject.getTemperature())
+print("Feeling like temperature: " + openPytherObject.getFeelingLikeTemperature())
+print("Minimum expected temperature: " + openPytherObject.getMinTemperature())
+print("Maximum expected temperature: " + openPytherObject.getMaxTemperature())
 
 #
 
