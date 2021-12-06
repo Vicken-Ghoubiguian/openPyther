@@ -107,10 +107,10 @@ openPytherObject.getMaxTemperature().setTemperatureAsKelvin()
 print("\n")
 
 # Display all of the temperatures in Kelvin (K)...
-print("Temperature: " + openPytherObject.getTemperature())
-print("Feeling like temperature: " + openPytherObject.getFeelingLikeTemperature())
-print("Minimum expected temperature: " + openPytherObject.getMinTemperature())
-print("Maximum expected temperature: " + openPytherObject.getMaxTemperature())
+print("Temperature: " + str(openPytherObject.getTemperature()))
+print("Feeling like temperature: " + str(openPytherObject.getFeelingLikeTemperature()))
+print("Minimum expected temperature: " + str(openPytherObject.getMinTemperature()))
+print("Maximum expected temperature: " + str(openPytherObject.getMaxTemperature()))
 
 # Break a line...
 print("\n")
@@ -125,10 +125,10 @@ openPytherObject.getMaxTemperature().setTemperatureAsCelsius()
 print("\n")
 
 # Display all of the temperatures in Celsius (°C)...
-print("Temperature: " + openPytherObject.getTemperature())
-print("Feeling like temperature: " + openPytherObject.getFeelingLikeTemperature())
-print("Minimum expected temperature: " + openPytherObject.getMinTemperature())
-print("Maximum expected temperature: " + openPytherObject.getMaxTemperature())
+print("Temperature: " + str(openPytherObject.getTemperature()))
+print("Feeling like temperature: " + str(openPytherObject.getFeelingLikeTemperature()))
+print("Minimum expected temperature: " + str(openPytherObject.getMinTemperature()))
+print("Maximum expected temperature: " + str(openPytherObject.getMaxTemperature()))
 
 # Break a line...
 print("\n")
@@ -143,10 +143,10 @@ openPytherObject.getMaxTemperature().setTemperatureAsFahrenheit()
 print("\n")
 
 # Display all of the temperatures in Fahrenheit (°F)...
-print("Temperature: " + openPytherObject.getTemperature())
-print("Feeling like temperature: " + openPytherObject.getFeelingLikeTemperature())
-print("Minimum expected temperature: " + openPytherObject.getMinTemperature())
-print("Maximum expected temperature: " + openPytherObject.getMaxTemperature())
+print("Temperature: " + str(openPytherObject.getTemperature()))
+print("Feeling like temperature: " + str(openPytherObject.getFeelingLikeTemperature()))
+print("Minimum expected temperature: " + str(openPytherObject.getMinTemperature()))
+print("Maximum expected temperature: " + str(openPytherObject.getMaxTemperature()))
 
 # Break two lines...
 print("\n\n")
