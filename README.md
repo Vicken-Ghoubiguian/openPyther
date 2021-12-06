@@ -106,7 +106,7 @@ openPytherObject.getMaxTemperature().setTemperatureAsKelvin()
 # Break a line...
 print("\n")
 
-#
+# Display all of the temperatures in Kelvin (K)...
 print("Temperature: " + openPytherObject.getTemperature())
 print("Feeling like temperature: " + openPytherObject.getFeelingLikeTemperature())
 print("Minimum expected temperature: " + openPytherObject.getMinTemperature())
@@ -124,7 +124,7 @@ openPytherObject.getMaxTemperature().setTemperatureAsCelsius()
 # Break a line...
 print("\n")
 
-#
+# Display all of the temperatures in Celsius (°C)...
 print("Temperature: " + openPytherObject.getTemperature())
 print("Feeling like temperature: " + openPytherObject.getFeelingLikeTemperature())
 print("Minimum expected temperature: " + openPytherObject.getMinTemperature())
@@ -142,7 +142,7 @@ openPytherObject.getMaxTemperature().setTemperatureAsFahrenheit()
 # Break a line...
 print("\n")
 
-#
+# Display all of the temperatures in Fahrenheit (°F)...
 print("Temperature: " + openPytherObject.getTemperature())
 print("Feeling like temperature: " + openPytherObject.getFeelingLikeTemperature())
 print("Minimum expected temperature: " + openPytherObject.getMinTemperature())
