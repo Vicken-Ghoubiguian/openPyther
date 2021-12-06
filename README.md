@@ -87,6 +87,9 @@ print(openPytherObject)
 <a name="convert_temperatures"></a>
 ### Convert temperatures
 
+```python
+```
+
 <a name="useful_links"></a>
 ## Useful links
 
