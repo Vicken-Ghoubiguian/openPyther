@@ -22,19 +22,19 @@ class OpenPyther:
 	# Definition of the first OpenPyther class constructor...
 	def __init__(self, city, APIKey, countryCode = None):
 
-		#
+		# Definition of the main bloc of this function (try ... except ... to handle any possible exceptions/errors)...
 		try:
 
-			#
+			# In the case where there is no country code...
 			if countryCode is None:
 
-				#
+				# Definition of the OpenWeatherMap's HTTP/HTTPS GET request without the country code...
 				weatherResponse = requests.get("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey + "", None)
 
-			#
+			# Or where there is a country code...
 			else:
 
-				#
+				# Definition of the OpenWeatherMap's HTTP/HTTPS GET request with the country code...
 				weatherResponse = requests.get("https://api.openweathermap.org/data/2.5/weather?q=" + city + "," + countryCode + "&appid=" + APIKey + "", None)
 
 			#
@@ -102,7 +102,7 @@ class OpenPyther:
 				"""
 				raise OpenWeatherError(self.__cod, weatherResponse_datas["message"])
 
-		#
+		# In the case where an exception/error occured...
 		except ConnectionError as occuredError:
 
 			"""
