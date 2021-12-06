@@ -94,7 +94,7 @@ import openPyther.openPyther as openPyther
 # Initialization of the 'openPyther' object with the wished localisation, the OpenWeather API key and the wished country code as parameters of the constructor...
 openPytherObject = openPyther.OpenPyther("<wishedLocalisation>", "<OpenWeather API Key>", "<wishedCountryCode>")
 
-#
+# Conversion (or not :-))) of temperatures to Kelvin (K)...
 openPytherObject.getTemperature().setTemperatureAsKelvin()
 openPytherObject.getFeelingLikeTemperature().setTemperatureAsKelvin()
 openPytherObject.getMinTemperature().setTemperatureAsKelvin()
@@ -108,7 +108,7 @@ print("Maximum expected temperature: " + openPytherObject.getMaxTemperature())
 
 #
 
-#
+# Conversion of temperatures to Celsius (°C)...
 openPytherObject.getTemperature().setTemperatureAsCelsius()
 openPytherObject.getFeelingLikeTemperature().setTemperatureAsCelsius()
 openPytherObject.getMinTemperature().setTemperatureAsCelsius()
@@ -122,7 +122,7 @@ print("Maximum expected temperature: " + openPytherObject.getMaxTemperature())
 
 #
 
-#
+# Conversion of temperatures to Fahrenheit (°F)...
 openPytherObject.getTemperature().setTemperatureAsFahrenheit()
 openPytherObject.getFeelingLikeTemperature().setTemperatureAsFahrenheit()
 openPytherObject.getMinTemperature().setTemperatureAsFahrenheit()
