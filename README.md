@@ -105,7 +105,10 @@ print("Maximum expected temperature: " + openPytherObject.getMaxTemperature())
 #
 
 #
-
+openPytherObject.getTemperature().setTemperatureAsCelsius()
+openPytherObject.getFeelingLikeTemperature().setTemperatureAsCelsius()
+openPytherObject.getMinTemperature().setTemperatureAsCelsius()
+openPytherObject.getMaxTemperature().setTemperatureAsCelsius()
 
 #
 print("Temperature: " + openPytherObject.getTemperature())
@@ -116,7 +119,10 @@ print("Maximum expected temperature: " + openPytherObject.getMaxTemperature())
 #
 
 #
-
+openPytherObject.getTemperature().setTemperatureAsFahrenheit()
+openPytherObject.getFeelingLikeTemperature().setTemperatureAsFahrenheit()
+openPytherObject.getMinTemperature().setTemperatureAsFahrenheit()
+openPytherObject.getMaxTemperature().setTemperatureAsFahrenheit()
 
 #
 print("Temperature: " + openPytherObject.getTemperature())
