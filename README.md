@@ -17,6 +17,7 @@ PyPi package to get, treat and return weather from the OpenWeatherMap's API. Mor
     * [Display all of the weather](#display_all_of_the_weather)
     * [Convert temperatures](#convert_temperatures)
     * [Convert pressures](#convert_pressures)
+    * [Sunrise and sunset time](#sunrise_and_sunset_time)
 10. [Useful links](#useful_links)
 11. [Conclusion](#conclusion)
 
@@ -241,7 +242,7 @@ print("\n\n")
 
 ```
 
-<a name=""></a>
+<a name="sunrise_and_sunset_time"></a>
 ### Sunrise and sunset times
 
 <a name="useful_links"></a>
