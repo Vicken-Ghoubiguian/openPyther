@@ -245,6 +245,9 @@ print("\n\n")
 <a name="sunrise_and_sunset_time"></a>
 ### Sunrise and sunset times
 
+```python
+```
+
 <a name="useful_links"></a>
 ## Useful links
 
