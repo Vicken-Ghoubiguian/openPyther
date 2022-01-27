@@ -16,6 +16,7 @@ PyPi package to get, treat and return weather from the OpenWeatherMap's API. Mor
 8. [A few examples](#a_few_examples)
     * [Display all of the weather](#display_all_of_the_weather)
     * [Convert temperatures](#convert_temperatures)
+    * [Convert pressures](#convert_pressures)
 10. [Useful links](#useful_links)
 11. [Conclusion](#conclusion)
 
@@ -153,7 +154,7 @@ print("\n\n")
 
 ```
 
-<a name=""></a>
+<a name="convert_pressures"></a>
 ### Convert pressures
 
 
