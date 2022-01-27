@@ -175,6 +175,21 @@ print("\n")
 
 # Display the pressure in hectoPascal (hPa)...
 print("Pressure: " + str(openPytherObject.getPressure()))
+
+# Break a line...
+print("\n")
+
+# Conversion (or not :-))) of pressure to Pascal (Pa)...
+openPytherObject.getPressure().setPressureAsPascal()
+
+# Break a line...
+print("\n")
+
+# Display the pressure in hectoPascal (hPa)...
+print("Pressure: " + str(openPytherObject.getPressure()))
+
+# Break a line...
+print("\n")
 ```
 
 <a name="useful_links"></a>
