@@ -157,6 +157,18 @@ print("\n\n")
 <a name="convert_pressures"></a>
 ### Convert pressures
 
+```python
+# Import the main module to use: the OpenPyther one...
+import openPyther.openPyther as openPyther
+
+# Initialization of the 'openPyther' object with the wished localisation, the OpenWeather API key and the wished country code as parameters of the constructor...
+openPytherObject = openPyther.OpenPyther("<wishedLocalisation>", "<OpenWeather API Key>", "<wishedCountryCode>")
+
+# Break two lines...
+print("\n\n")
+
+
+```
 
 <a name="useful_links"></a>
 ## Useful links
