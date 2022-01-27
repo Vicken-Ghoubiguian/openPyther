@@ -167,7 +167,14 @@ openPytherObject = openPyther.OpenPyther("<wishedLocalisation>", "<OpenWeather A
 # Break two lines...
 print("\n\n")
 
+# Conversion (or not :-))) of pressure to hectoPascal (hPa)...
+openPytherObject.getPressure().setPressureAsHectoPascal()
 
+# Break a line...
+print("\n")
+
+# Display the pressure in hectoPascal (hPa)...
+print("Pressure: " + str(openPytherObject.getPressure()))
 ```
 
 <a name="useful_links"></a>
