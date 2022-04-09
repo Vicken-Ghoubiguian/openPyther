@@ -24,7 +24,7 @@ PyPi package to get, treat and return weather from the OpenWeatherMap's API. Mor
 <a name="introduction"></a>
 ## Introduction
 
-Coming soon...
+This project consists to develop a Python module to get, treat and return weather datas from OpenWeatherMap.
 
 <a name="presentation"></a>
 ## Presentation
